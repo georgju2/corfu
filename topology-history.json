@@ -1,0 +1,19 @@
+/* History - Can be referenced indirectl via single nodey*/
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/history.schema.json",
+  "title": "History of node placement",
+  "description": "History of node placement",
+  "type": "object",
+  "properties": {
+    "history": {
+      "description": "Previous placements of the node",
+      "type": "array",
+      "nodes": {
+        "type": "string"
+      },
+      "minItems": 1, /*The minItems validation keyword is used to make sure there is at least one item in the array.*/
+      "uniqueItems": true /*uniqueItems validation keyword notes all of the items in the array must be unique relative to one another*/
+    }
+  }
+}

@@ -1,0 +1,20 @@
+=== Topology preparation === :: baseline-rpi.topology
+[topology] localhost:8080 → None localhost 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /linreg/linreg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=50.6'C
+throttled=0x0
+Subround 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+=== Topology preparation === :: baseline-cloud1.topology
+=== Topology preparation === :: baseline-cloud2.topology

@@ -1,0 +1,524 @@
+Sam 2 Wím 06:48:58 CEST 2021
+=== Topology preparation === :: testclient.topology
+sudo: Kein TTY vorhanden und kein »askpass«-Programm angegeben
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-flask is already the newest version (1.1.1-2).
+python3-matplotlib is already the newest version (3.1.2-1ubuntu4).
+python3-scipy is already the newest version (1.3.3-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-flask is already the newest version (1.1.1-2).
+python3-matplotlib is already the newest version (3.1.2-1ubuntu4).
+python3-scipy is already the newest version (1.3.3-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /linreg/linreg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 11.99 s per job over 1 runs.
+Total invocation time across jobs 16.2 s, per job 8.1 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 16.2 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-4-False.csv
+Invocation time measurement. Parallelism: 4
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 12.99 s per job over 1 runs.
+Total invocation time across jobs 16.43 s, per job 4.1075 s per round on average.
+Average successes 100.0 % out of 4 jobs.
+Grand total across all rounds 16.43 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-4-False.csv
+Invocation time measurement. Parallelism: 6
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished→ True
+* one request finished  INFERRED OKTrue
+
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 13.36 s per job over 1 runs.
+Total invocation time across jobs 16.42 s, per job 2.736666666666667 s per round on average.
+Average successes 100.0 % out of 6 jobs.
+Grand total across all rounds 16.42 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-4-False.csv
+Invocation time measurement. Parallelism: 8
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 13.41 s per job over 1 runs.
+Total invocation time across jobs 17.53 s, per job 2.19125 s per round on average.
+Average successes 100.0 % out of 8 jobs.
+Grand total across all rounds 17.53 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-4-False.csv
+Invocation time measurement. Parallelism: 10
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 22.84 s per job over 1 runs.
+Total invocation time across jobs 35.83 s, per job 3.5829999999999997 s per round on average.
+Average successes 100.0 % out of 10 jobs.
+Grand total across all rounds 35.83 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-4-False.csv
+Invocation time measurement. Parallelism: 12
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 17.91 s per job over 1 runs.
+Total invocation time across jobs 28.31 s, per job 2.3591666666666664 s per round on average.
+Average successes 100.0 % out of 12 jobs.
+Grand total across all rounds 28.31 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-12-4-False.csv
+Invocation time measurement. Parallelism: 14
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 20.53 s per job over 1 runs.
+Total invocation time across jobs 35.6 s, per job 2.542857142857143 s per round on average.
+Average successes 100.0 % out of 14 jobs.
+Grand total across all rounds 35.6 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-14-4-False.csv
+Invocation time measurement. Parallelism: 16
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→→ INFERRED OK
+ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Invocation time average 14.69 s per job over 1 runs.
+Total invocation time across jobs 19.35 s, per job 1.209375 s per round on average.
+Average successes 100.0 % out of 16 jobs.
+Grand total across all rounds 19.35 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-16-4-False.csv
+Invocation time measurement. Parallelism: 18
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 25.91 s per job over 1 runs.
+Total invocation time across jobs 48.89 s, per job 2.716111111111111 s per round on average.
+Average successes 100.0 % out of 18 jobs.
+Grand total across all rounds 48.89 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-18-4-False.csv
+Invocation time measurement. Parallelism: 20
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Initiate load-balancing connection...
+Connection initiated and assumed working after safety wait period.
+Round 4 @ new node None total nodes 4
+Subround 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→→ INFERRED OK
+ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 22.33 s per job over 1 runs.
+Total invocation time across jobs 42.43 s, per job 2.1215 s per round on average.
+Average successes 100.0 % out of 20 jobs.
+Grand total across all rounds 42.43 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-20-4-False.csv
+Overall experiment time 307.53 s.
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Terminating 4 nodes...
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+./testnodes.sh: line 48: kill: (20342) - No such process
+./testnodes.sh: line 48: kill: (20360) - No such process
+./testnodes.sh: line 48: kill: (20376) - No such process
+./testnodes.sh: line 48: kill: (20392) - No such process
+sleep 3
+=== End of experiment ===
+=> Experiment results: experiments/exp4909

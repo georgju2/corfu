@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+import topology
+import sys
+
+if not 3 <= len(sys.argv) <= 4:
+    exit("Syntax: corfu-topo <*.topology> [parse|deploy [<function-file>]|deployrun|run]")
+topofile = sys.argv[1]
+mode = sys.argv[2]
+ffile = None
+if len(sys.argv) == 4:
+    ffile = sys.argv[3]
+
+if mode == "parse" or mode == "deploy" or mode == "deployrun" or mode == "run":
+    confs = topology.topology(topofile)
+
+if mode == "deploy" or mode == "deployrun":
+    dret = topology.deploy(confs, ffile)
+    if dret and mode == "deployrun":
+        folder, pids = topology.launchterms(confs, topofile)
+        #topology.storeinformation(folder, pids)
+elif mode == "run":
+    folder, pids = topology.launchterms(confs, topofile)
+    #topology.storeinformation(folder, pids)

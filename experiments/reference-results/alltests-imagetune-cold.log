@@ -1,0 +1,1508 @@
+[tempcheck] 47.7 °C
+[tempcheck] admitted
+=== Topology preparation === :: baseline-rpi.topology
+[topology] localhost:8080 → None localhost 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /imagetune/processimage/foggy-path-landscape.jpg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=49.1'C
+throttled=0x0
+Subround 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+→ /tmp/imagetune_b0pd5nx9.jpg
+→ /tmp/imagetune_tp_001n1.jpg
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+→ /tmp/imagetune_tladxb8k.jpg
+→ /tmp/imagetune_c3j26xoz.jpg
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+→ /tmp/imagetune_zvlb77v3.jpg
+→ /tmp/imagetune_4g4j7nt8.jpg
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+→ /tmp/imagetune_yivz81rk.jpg
+→ /tmp/imagetune_hbnam3ng.jpg
+* one request finished True
+* one request finished True
+Invocation time average 78.32 s per job over 4 runs.
+Total invocation time across jobs 82.07 s, per job 41.035 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 328.29 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-1-True.csv
+Invocation time measurement. Parallelism: 4
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=66.2'C
+throttled=0x0
+Subround 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+→ /tmp/imagetune_b4j3zltb.jpg
+* one request finished True
+→ /tmp/imagetune_rcd7ls6c.jpg
+* one request finished True
+→ /tmp/imagetune_cs8s5u9u.jpg
+* one request finished True
+→ /tmp/imagetune_u11p91p8.jpg
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+→ /tmp/imagetune_hrq7zodu.jpg
+→ /tmp/imagetune_b7dbdsju.jpg
+→ /tmp/imagetune_jp8llg7c.jpg
+→ /tmp/imagetune_rraa5mi0.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+→ /tmp/imagetune_mv5opk4t.jpg
+→ /tmp/imagetune_mrknvkeu.jpg
+* one request finished True
+→ /tmp/imagetune_92z97prn.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_ogrbc5xo.jpg
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False→ 
+
+* one request finished False
+* one request finished False
+Invocation time average 109.61 s per job over 4 runs.
+Total invocation time across jobs 117.08 s, per job 29.27 s per round on average.
+Average successes 75.0 % out of 4 jobs.
+Grand total across all rounds 468.32 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-1-True.csv
+Invocation time measurement. Parallelism: 6
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=80.3'C
+throttled=0x20000
+Subround 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+→ 
+* one request finished False
+→ 
+* one request finished False
+→ 
+→ 
+* one request finished False
+→ 
+→ /tmp/imagetune_dd1a85nc.jpg
+* one request finished False
+* one request finished False
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ /tmp/imagetune_b4mj_uol.jpg
+→ /tmp/imagetune_p6u4bqf5.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+* one request finished False
+* one request finished False
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+Subround 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_bzxclzzq.jpg
+* one request finished True
+→ /tmp/imagetune_xuepdapt.jpg
+* one request finished True
+Invocation time average 67.08 s per job over 4 runs.
+Total invocation time across jobs 109.23 s, per job 18.205000000000002 s per round on average.
+Average successes 20.83 % out of 6 jobs.
+Grand total across all rounds 436.94 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-1-True.csv
+Invocation time measurement. Parallelism: 8
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=79.8'C
+throttled=0x60000
+Subround 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished→ 
+ False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+Subround 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+→ → 
+
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+Subround 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ /tmp/imagetune_vuxo27k0.jpg
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_j0bdyh7p.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_r8zxgklb.jpg
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_vkiqv5uk.jpg
+* one request finished False
+* one request finished True
+* one request finished True
+Invocation time average 75.83 s per job over 4 runs.
+Total invocation time across jobs 127.68 s, per job 15.96 s per round on average.
+Average successes 12.5 % out of 8 jobs.
+Grand total across all rounds 510.72 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-1-True.csv
+Invocation time measurement. Parallelism: 10
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500398464
+temp=80.3'C
+throttled=0x60000
+Subround 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+* one request finished→  False
+
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+Subround 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_g08se6_1.jpg
+→ /tmp/imagetune_rca2fa3r.jpg
+* one request finished False
+* one request finished False
+→ /tmp/imagetune__kmjpqbl.jpg
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_hw1405lf.jpg
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+→ 
+* one request finished False
+→ 
+→ /tmp/imagetune_2_zviu95.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_sjaueh93.jpg
+* one request finished False
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+→ /tmp/imagetune_wwdw_ao5.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+Invocation time average 130.54 s per job over 4 runs.
+Total invocation time across jobs 193.18 s, per job 19.318 s per round on average.
+Average successes 17.5 % out of 10 jobs.
+Grand total across all rounds 772.72 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-1-True.csv
+Invocation time measurement. Parallelism: 12
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500398464
+temp=79.8'C
+throttled=0x60000
+Subround 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_8pfyazd3.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+→ /tmp/imagetune_4841owg9.jpg
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+* one request finished False
+→ /tmp/imagetune_f2dimxr_.jpg
+→ /tmp/imagetune_9xz9_qj7.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ /tmp/imagetune_1jjw_nr9.jpg
+→ /tmp/imagetune__j12pspt.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_cy2t_ftx.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ /tmp/imagetune_hdx9o3vt.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+Invocation time average 102.59 s per job over 4 runs.
+Total invocation time across jobs 180.79 s, per job 15.065833333333332 s per round on average.
+Average successes 16.67 % out of 12 jobs.
+Grand total across all rounds 723.17 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-12-1-True.csv
+Invocation time measurement. Parallelism: 14
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500398464
+temp=81.3'C
+throttled=0x60000
+Subround 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+Subround 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+* one request finished False
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+Subround 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ /tmp/imagetune__wxfbggo.jpg
+* one request finished False
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ /tmp/imagetune_zcvog41z.jpg
+* one request finished False
+→ /tmp/imagetune_cx9xysgs.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_csdddqmy.jpg
+→ /tmp/imagetune_jkelw5jj.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 95.82 s per job over 4 runs.
+Total invocation time across jobs 178.63 s, per job 12.759285714285713 s per round on average.
+Average successes 8.93 % out of 14 jobs.
+Grand total across all rounds 714.51 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-14-1-True.csv
+Invocation time measurement. Parallelism: 16
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=80.8'C
+throttled=0x60000
+Subround 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ /tmp/imagetune_1mef2ik5.jpg
+→ /tmp/imagetune_2rcvi3pz.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ /tmp/imagetune_4jks8962.jpg
+→ /tmp/imagetune_jrwwmph_.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_mlrt4lje.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ /tmp/imagetune_6i3uf2q2.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+→ /tmp/imagetune_p1xygohl.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_377d8mm_.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+Invocation time average 115.79 s per job over 4 runs.
+Total invocation time across jobs 207.31 s, per job 12.956875 s per round on average.
+Average successes 12.5 % out of 16 jobs.
+Grand total across all rounds 829.25 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-16-1-True.csv
+Invocation time measurement. Parallelism: 18
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500398464
+temp=80.3'C
+throttled=0x60000
+Subround 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→→ 
+ 
+→ 
+→ 
+→ 
+→ /tmp/imagetune_23um_wrf.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_lt4t8cdw.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+→ /tmp/imagetune_1olzpiwv.jpg
+→ /tmp/imagetune_sopia4gt.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_pnumiqiy.jpg
+→ /tmp/imagetune_eq51x3p_.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ /tmp/imagetune_vak7gxkw.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_uf3aa4ke.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+→ /tmp/imagetune_o8el3u8_.jpg
+* one request finished False
+* one request finished False
+→ /tmp/imagetune__kb3mrum.jpg
+* one request finished False
+→ /tmp/imagetune_hdabg5ya.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 142.17 s per job over 4 runs.
+Total invocation time across jobs 256.8 s, per job 14.266666666666667 s per round on average.
+Average successes 15.28 % out of 18 jobs.
+Grand total across all rounds 1027.21 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-18-1-True.csv
+Invocation time measurement. Parallelism: 20
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=81.3'C
+throttled=0x60000
+Subround 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ /tmp/imagetune_sphjo8ar.jpg
+→ /tmp/imagetune_3hp3ahgk.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_2ezgkb1n.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_ggisrwk2.jpg
+→ /tmp/imagetune_jxkugzqz.jpg
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+→ /tmp/imagetune_2349gy_t.jpg
+* one request finished False
+* one request finished False
+→ /tmp/imagetune_0droqofq.jpg
+→ /tmp/imagetune_w3vvqpqq.jpg
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+→ /tmp/imagetune_ndjvut3s.jpg
+* one request finished False
+→ /tmp/imagetune_o5tmn5qo.jpg
+→ /tmp/imagetune_p15djij_.jpg
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 157.26 s per job over 4 runs.
+Total invocation time across jobs 286.64 s, per job 14.331999999999999 s per round on average.
+Average successes 13.75 % out of 20 jobs.
+Grand total across all rounds 1146.57 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-20-1-True.csv
+Overall experiment time 6958.02 s.
+[topology] localhost:8080 → None localhost 8080
+Terminating 1 nodes...
+No exception - likely terminated regularly.
+./testnodes.sh: line 46: kill: (1325) - No such process
+sleep 3
+=== End of experiment ===
+=> Experiment results: experiments/exp1002

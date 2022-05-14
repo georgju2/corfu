@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+import corfu
+import os
+
+funcs, port = corfu.setuptoserve(os.path.dirname(__file__))
+corfu.systhread(funcs)
+corfu.serve(funcs, port)

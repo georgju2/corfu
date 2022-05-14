@@ -1,0 +1,514 @@
+Sam 2 Wím 05:43:43 CEST 2021
+=== Topology preparation === :: testclient.topology
+sudo: Kein TTY vorhanden und kein »askpass«-Programm angegeben
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-flask is already the newest version (1.1.1-2).
+python3-matplotlib is already the newest version (3.1.2-1ubuntu4).
+python3-scipy is already the newest version (1.3.3-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-flask is already the newest version (1.1.1-2).
+python3-matplotlib is already the newest version (3.1.2-1ubuntu4).
+python3-scipy is already the newest version (1.3.3-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /imagetune/processimage/foggy-path-landscape.jpg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.232:8080 with delay 4
+* start request http://160.85.252.232:8080 with delay 2
+→ /tmp/imagetune_0hp0yhxz.jpg
+→ /tmp/imagetune_0fwhwyzc.jpg
+* one request finished True
+* one request finished True
+Invocation time average 15.91 s per job over 1 runs.
+Total invocation time across jobs 19.92 s, per job 9.96 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 19.92 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-4-True.csv
+Invocation time measurement. Parallelism: 4
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+→ /tmp/imagetune_129athnd.jpg
+→ /tmp/imagetune_zecs_fke.jpg
+→ /tmp/imagetune_g7s66d61.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_2t30ugy3.jpg
+* one request finished True
+* one request finished True
+Invocation time average 29.73 s per job over 1 runs.
+Total invocation time across jobs 32.22 s, per job 8.055 s per round on average.
+Average successes 100.0 % out of 4 jobs.
+Grand total across all rounds 32.22 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-4-True.csv
+Invocation time measurement. Parallelism: 6
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+→ /tmp/imagetune_mc_6ndst.jpg
+* one request finished True
+→ /tmp/imagetune_rwt1syl_.jpg
+→ /tmp/imagetune_6d7cqmso.jpg
+* one request finished True
+→ /tmp/imagetune_701q3o3n.jpg
+→ /tmp/imagetune_fdgxq67f.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_iecihfrb.jpg
+* one request finished True
+Invocation time average 43.22 s per job over 1 runs.
+Total invocation time across jobs 47.1 s, per job 7.8500000000000005 s per round on average.
+Average successes 100.0 % out of 6 jobs.
+Grand total across all rounds 47.1 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-4-True.csv
+Invocation time measurement. Parallelism: 8
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 3
+→ /tmp/imagetune_acsaqt5o.jpg
+→ /tmp/imagetune_mvd0w70c.jpg
+→ /tmp/imagetune_n_qyk_91.jpg
+* one request finished True
+→ /tmp/imagetune_szkiw7tv.jpg
+→ /tmp/imagetune_s_7sjt_k.jpg
+→ /tmp/imagetune_jvku781u.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_jb6xznj5.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_jl4kliuk.jpg
+* one request finished True
+* one request finished True
+Invocation time average 57.7 s per job over 1 runs.
+Total invocation time across jobs 61.47 s, per job 7.68375 s per round on average.
+Average successes 100.0 % out of 8 jobs.
+Grand total across all rounds 61.47 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-4-True.csv
+Invocation time measurement. Parallelism: 10
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+→ /tmp/imagetune_wn70crj1.jpg
+→ /tmp/imagetune_agno2tc0.jpg
+→ /tmp/imagetune_9o4dp0sj.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_dre0o_jz.jpg
+→ /tmp/imagetune_q_csrogp.jpg
+→ /tmp/imagetune_xe8y0j85.jpg
+→→ /tmp/imagetune_lz0hkoqb.jpg
+ /tmp/imagetune_hk79642r.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_lxrw_z2n.jpg
+* one request finished True
+→ /tmp/imagetune_w9k2meur.jpg
+* one request finished True
+* one request finished True
+Invocation time average 69.52 s per job over 1 runs.
+Total invocation time across jobs 75.12 s, per job 7.5120000000000005 s per round on average.
+Average successes 100.0 % out of 10 jobs.
+Grand total across all rounds 75.12 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-4-True.csv
+Invocation time measurement. Parallelism: 12
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 3
+→ /tmp/imagetune_pijxefyf.jpg
+→ /tmp/imagetune_pu1qf8br.jpg
+→ /tmp/imagetune_l6r449tk.jpg
+→ /tmp/imagetune_fp2bm2li.jpg
+* one request finished True
+→ /tmp/imagetune_hfu6nnkh.jpg
+* one request finished True
+→ /tmp/imagetune_gv_hwkhf.jpg
+→ /tmp/imagetune_qgeyd_ti.jpg
+→ /tmp/imagetune_tnq36lr4.jpg
+→ /tmp/imagetune_7_9g5tzv.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_t9vj12jg.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_c68wtdad.jpg
+→ /tmp/imagetune_sdd9h039.jpg
+* one request finished True
+* one request finished True
+Invocation time average 82.01 s per job over 1 runs.
+Total invocation time across jobs 87.96 s, per job 7.329999999999999 s per round on average.
+Average successes 100.0 % out of 12 jobs.
+Grand total across all rounds 87.96 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-12-4-True.csv
+Invocation time measurement. Parallelism: 14
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 1
+→ /tmp/imagetune_dtkd42yk.jpg
+→ /tmp/imagetune_dmvjp62g.jpg
+→ /tmp/imagetune_9rh5ipgz.jpg
+→ /tmp/imagetune_jkrgr7s4.jpg
+→ /tmp/imagetune_bkd2u8z8.jpg
+→ /tmp/imagetune_bz8o24lu.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_v4_7n_4z.jpg
+→ /tmp/imagetune_cfenohv7.jpg
+→ /tmp/imagetune_s93fj7xd.jpg
+→ /tmp/imagetune_4lyoly9n.jpg
+→ /tmp/imagetune_osxuynd1.jpg
+→ /tmp/imagetune_gces6tmg.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_hls31w7o.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_es6jgkb1.jpg
+* one request finished True
+Invocation time average 101.83 s per job over 1 runs.
+Total invocation time across jobs 105.3 s, per job 7.521428571428571 s per round on average.
+Average successes 100.0 % out of 14 jobs.
+Grand total across all rounds 105.3 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-14-4-True.csv
+Invocation time measurement. Parallelism: 16
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+→ /tmp/imagetune_5svngase.jpg
+→ /tmp/imagetune_me72ld3s.jpg
+→ /tmp/imagetune_2n_rxnoc.jpg
+* one request finished True
+→ /tmp/imagetune_5vt4qw3q.jpg
+→ /tmp/imagetune_b8oqueuv.jpg
+→ /tmp/imagetune_9m_vukf9.jpg
+→→ /tmp/imagetune_le9onva6.jpg
+ /tmp/imagetune_bkneqcte.jpg
+→ /tmp/imagetune_a33gq38m.jpg
+→ /tmp/imagetune_9_ebdclr.jpg
+→ /tmp/imagetune_fpl2ai3l.jpg
+* one request finished True
+→ /tmp/imagetune_6ixy6ox4.jpg
+→ /tmp/imagetune_2m36q8ud.jpg
+→ /tmp/imagetune_uffs5zu1.jpg
+→ /tmp/imagetune_mvoyd0hx.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_ie5z4ncr.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 116.13 s per job over 1 runs.
+Total invocation time across jobs 121.21 s, per job 7.575625 s per round on average.
+Average successes 100.0 % out of 16 jobs.
+Grand total across all rounds 121.21 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-16-4-True.csv
+Invocation time measurement. Parallelism: 18
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 0
+→ /tmp/imagetune_djbxnpu8.jpg
+* one request finished True
+→ /tmp/imagetune_714pxs3k.jpg
+→ /tmp/imagetune_5hxtf_0i.jpg
+→ /tmp/imagetune_hx6hmtpe.jpg
+→ /tmp/imagetune_0qp5jwy0.jpg
+→ /tmp/imagetune_b7yxb5ce.jpg
+→ /tmp/imagetune_isglpxnu.jpg
+→ /tmp/imagetune_occlr8pg.jpg
+→ /tmp/imagetune_hb5skz67.jpg
+→ /tmp/imagetune_bh3rsl_y.jpg
+→ /tmp/imagetune_cbkqip58.jpg
+→ /tmp/imagetune__k2mf56c.jpg
+* one request finished True
+→ /tmp/imagetune_0hsn1g3z.jpg
+→ /tmp/imagetune_gtrrg0ma.jpg
+→ /tmp/imagetune_sdcgadq5.jpg
+→ /tmp/imagetune_cxuri3cp.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_g72uibxn.jpg
+→ /tmp/imagetune_nsseimlr.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 128.72 s per job over 1 runs.
+Total invocation time across jobs 134.7 s, per job 7.4833333333333325 s per round on average.
+Average successes 100.0 % out of 18 jobs.
+Grand total across all rounds 134.7 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-18-4-True.csv
+Invocation time measurement. Parallelism: 20
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.232:8080 with delay 3
+* start request http://160.85.252.232:8080 with delay 0
+* start request http://160.85.252.232:8080 with delay 0
+* start request http://160.85.252.232:8080 with delay 0
+* start request http://160.85.252.232:8080 with delay 4
+* start request http://160.85.252.232:8080 with delay 1
+* start request http://160.85.252.232:8080 with delay 0
+* start request http://160.85.252.232:8080 with delay 1
+* start request http://160.85.252.232:8080 with delay 0
+* start request http://160.85.252.232:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+→ /tmp/imagetune_qxbrjzxa.jpg
+→ /tmp/imagetune_xutmo_lo.jpg
+→ /tmp/imagetune_aqkcxbx3.jpg
+→ /tmp/imagetune_4vg1a0jo.jpg
+→ /tmp/imagetune_nscxz2n9.jpg
+→ /tmp/imagetune_y_fvefs1.jpg
+→ /tmp/imagetune_7h8ywqc2.jpg
+→ /tmp/imagetune_mvoadvft.jpg
+→ /tmp/imagetune_6ahant7j.jpg
+→ /tmp/imagetune_w8x7rkc0.jpg
+→ /tmp/imagetune_41gsemle.jpg
+→ /tmp/imagetune_2p82ifae.jpg
+→ /tmp/imagetune_rd359tpb.jpg
+→ /tmp/imagetune_4lgt6hd4.jpg
+→ /tmp/imagetune_1qxyxege.jpg
+→ /tmp/imagetune_nmr2rj1l.jpg
+→ /tmp/imagetune_wsdhpa4t.jpg
+→ /tmp/imagetune_0ek6z6pu.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_y7fqg6mi.jpg
+→ /tmp/imagetune_xxf30rky.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 71.41 s per job over 1 runs.
+Total invocation time across jobs 77.1 s, per job 3.8549999999999995 s per round on average.
+Average successes 100.0 % out of 20 jobs.
+Grand total across all rounds 77.1 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-20-4-True.csv
+Overall experiment time 762.15 s.
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Terminating 4 nodes...
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+./testnodes.sh: line 48: kill: (18554) - No such process
+./testnodes.sh: line 48: kill: (18571) - No such process
+./testnodes.sh: line 48: kill: (18589) - No such process
+./testnodes.sh: line 48: kill: (18605) - No such process
+sleep 3
+=== End of experiment ===
+=> Experiment results: experiments/exp235

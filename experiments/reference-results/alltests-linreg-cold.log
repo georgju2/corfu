@@ -1,0 +1,1474 @@
+[tempcheck] 44.8 °C
+[tempcheck] admitted
+=== Topology preparation === :: baseline-rpi.topology
+[topology] localhost:8080 → None localhost 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /linreg/linreg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=47.7'C
+throttled=0x0
+Subround 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 55.68 s per job over 4 runs.
+Total invocation time across jobs 58.95 s, per job 29.475 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 235.8 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-1-True.csv
+Invocation time measurement. Parallelism: 4
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=67.6'C
+throttled=0x0
+Subround 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 72.79 s per job over 4 runs.
+Total invocation time across jobs 75.74 s, per job 18.935 s per round on average.
+Average successes 100.0 % out of 4 jobs.
+Grand total across all rounds 302.96 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-1-True.csv
+Invocation time measurement. Parallelism: 6
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1500345728
+temp=80.8'C
+throttled=0x20000
+Subround 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 126.61 s per job over 4 runs.
+Total invocation time across jobs 133.1 s, per job 22.183333333333334 s per round on average.
+Average successes 100.0 % out of 6 jobs.
+Grand total across all rounds 532.4 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-1-True.csv
+Invocation time measurement. Parallelism: 8
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1000265600
+temp=83.2'C
+throttled=0x60002
+Subround 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Invocation time average 213.43 s per job over 4 runs.
+Total invocation time across jobs 221.29 s, per job 27.66125 s per round on average.
+Average successes 100.0 % out of 8 jobs.
+Grand total across all rounds 885.16 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-1-True.csv
+Invocation time measurement. Parallelism: 10
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=900175808
+temp=83.2'C
+throttled=0x60002
+Subround 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+→ 
+* one request finished False
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+→ 
+→ 
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 270.47 s per job over 4 runs.
+Total invocation time across jobs 279.47 s, per job 27.947000000000003 s per round on average.
+Average successes 80.0 % out of 10 jobs.
+Grand total across all rounds 1117.86 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-1-True.csv
+Invocation time measurement. Parallelism: 12
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1000265600
+temp=83.2'C
+throttled=0x60002
+Subround 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 306.95 s per job over 4 runs.
+Total invocation time across jobs 324.88 s, per job 27.073333333333334 s per round on average.
+Average successes 72.92 % out of 12 jobs.
+Grand total across all rounds 1299.53 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-12-1-True.csv
+Invocation time measurement. Parallelism: 14
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1000265600
+temp=82.7'C
+throttled=0x60002
+Subround 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 399.06 s per job over 4 runs.
+Total invocation time across jobs 431.76 s, per job 30.84 s per round on average.
+Average successes 53.57 % out of 14 jobs.
+Grand total across all rounds 1727.05 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-14-1-True.csv
+Invocation time measurement. Parallelism: 16
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1000265600
+temp=82.3'C
+throttled=0x60002
+Subround 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 609.87 s per job over 4 runs.
+Total invocation time across jobs 700.37 s, per job 43.773125 s per round on average.
+Average successes 50.0 % out of 16 jobs.
+Grand total across all rounds 2801.47 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-16-1-True.csv
+Invocation time measurement. Parallelism: 18
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1000212864
+temp=83.2'C
+throttled=0x60002
+Subround 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+→ 
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 486.15 s per job over 4 runs.
+Total invocation time across jobs 559.91 s, per job 31.106111111111108 s per round on average.
+Average successes 43.06 % out of 18 jobs.
+Grand total across all rounds 2239.65 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-18-1-True.csv
+Invocation time measurement. Parallelism: 20
+[topology] localhost:8080 → None localhost 8080
+Round 0 @ new node http://localhost:8080 total nodes 1
+Performing frequency/temperature/throttling checks...
+frequency(48)=1000212864
+temp=83.2'C
+throttled=0x60002
+Subround 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→→ INFERRED OK
+ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 4
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 3
+* start request http://localhost:8080 with delay 0
+* start request http://localhost:8080 with delay 1
+* start request http://localhost:8080 with delay 2
+* start request http://localhost:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False

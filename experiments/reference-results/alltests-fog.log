@@ -1,0 +1,3018 @@
+=== Topology preparation === :: baseline-fog.topology
+[topology] 192.168.0.30:8080 → None 192.168.0.30 8080
+Traceback (most recent call last):
+  File "topology.py", line 96, in <module>
+    confs = topology(topofile)
+  File "topology.py", line 29, in topology
+    raise Exception("User must be specified for non-local nodes.")
+Exception: User must be specified for non-local nodes.
+! Assuming topology preparation fault. Bailing out.
+=== Topology preparation === :: baseline-fog.topology
+[topology] 192.168.0.30:8080 → None 192.168.0.30 8080
+Traceback (most recent call last):
+  File "topology.py", line 96, in <module>
+    confs = topology(topofile)
+  File "topology.py", line 29, in topology
+    raise Exception("User must be specified for non-local nodes.")
+Exception: User must be specified for non-local nodes.
+! Assuming topology preparation fault. Bailing out.
+=== Topology preparation === :: baseline-fog.topology
+Generating public/private rsa key pair.
+Your identification has been saved in topology-keys/192.168.0.30_auto.
+Your public key has been saved in topology-keys/192.168.0.30_auto.pub.
+The key fingerprint is:
+SHA256:HE5zC9yNP6K+vQpoLdQi3DNwNwhcBG+Fvj5ijTh0+uA pi@raspberrypi
+The key's randomart image is:
++---[RSA 2048]----+
+| .o+o..          |
+|  .o.o . . o     |
+|  ..= o * + .    |
+| . =.o = = o     |
+|  o *.. S o o    |
+| . +.*   . . .   |
+|.oo++ o .        |
+|+.=.+. o .       |
+| E.o .  +oo.     |
++----[SHA256]-----+
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "topology-keys/192.168.0.30_auto.pub"
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'spio@192.168.0.30'"
+and check to make sure that only the key(s) you wanted were added.
+
+sudo: Kein TTY vorhanden und kein »askpass«-Programm angegeben
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /linreg/linreg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 13.09 s per job over 4 runs.
+Total invocation time across jobs 15.84 s, per job 7.92 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 63.36 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-1-False.csv
+Invocation time measurement. Parallelism: 4
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 25.26 s per job over 4 runs.
+Total invocation time across jobs 28.95 s, per job 7.2375 s per round on average.
+Average successes 100.0 % out of 4 jobs.
+Grand total across all rounds 115.81 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-1-False.csv
+Invocation time measurement. Parallelism: 6
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Invocation time average 37.94 s per job over 4 runs.
+Total invocation time across jobs 42.36 s, per job 7.06 s per round on average.
+Average successes 100.0 % out of 6 jobs.
+Grand total across all rounds 169.43 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-1-False.csv
+Invocation time measurement. Parallelism: 8
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Invocation time average 52.06 s per job over 4 runs.
+Total invocation time across jobs 56.29 s, per job 7.03625 s per round on average.
+Average successes 100.0 % out of 8 jobs.
+Grand total across all rounds 225.16 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-1-False.csv
+Invocation time measurement. Parallelism: 10
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→→ INFERRED OK
+ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 66.49 s per job over 4 runs.
+Total invocation time across jobs 70.58 s, per job 7.058 s per round on average.
+Average successes 100.0 % out of 10 jobs.
+Grand total across all rounds 282.34 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-1-False.csv
+Invocation time measurement. Parallelism: 12
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 79.91 s per job over 4 runs.
+Total invocation time across jobs 84.39 s, per job 7.0325 s per round on average.
+Average successes 100.0 % out of 12 jobs.
+Grand total across all rounds 337.56 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-12-1-False.csv
+Invocation time measurement. Parallelism: 14
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 94.62 s per job over 4 runs.
+Total invocation time across jobs 99.52 s, per job 7.1085714285714285 s per round on average.
+Average successes 100.0 % out of 14 jobs.
+Grand total across all rounds 398.09 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-14-1-False.csv
+Invocation time measurement. Parallelism: 16
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 112.09 s per job over 4 runs.
+Total invocation time across jobs 115.9 s, per job 7.24375 s per round on average.
+Average successes 100.0 % out of 16 jobs.
+Grand total across all rounds 463.61 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-16-1-False.csv
+Invocation time measurement. Parallelism: 18
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 128.56 s per job over 4 runs.
+Total invocation time across jobs 133.39 s, per job 7.410555555555555 s per round on average.
+Average successes 100.0 % out of 18 jobs.
+Grand total across all rounds 533.56 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-18-1-False.csv
+Invocation time measurement. Parallelism: 20
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 150.29 s per job over 4 runs.
+Total invocation time across jobs 156.09 s, per job 7.8045 s per round on average.
+Average successes 100.0 % out of 20 jobs.
+Grand total across all rounds 624.37 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-20-1-False.csv
+Overall experiment time 3213.53 s.
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Terminating 1 nodes...
+No exception - likely terminated regularly.
+./testnodes.sh: line 46: kill: (27023) - No such process
+sleep 3
+=== End of experiment ===
+=> Experiment results: experiments/exp6391
+=== Topology preparation === :: baseline-fog.topology
+sudo: Kein TTY vorhanden und kein »askpass«-Programm angegeben
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /imagetune/processimage/foggy-path-landscape.jpg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune_9jc9c3sy.jpg
+* one request finished True
+→ /tmp/imagetune_p6bme9tc.jpg
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+→ /tmp/imagetune_jt2gl5ql.jpg
+* one request finished True
+→ /tmp/imagetune_6ngakhuq.jpg
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+→ /tmp/imagetune__uir_k1e.jpg
+* one request finished True
+→ /tmp/imagetune_r0aip0n8.jpg
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_5_3u2gd1.jpg
+* one request finished True
+→ /tmp/imagetune_28hgau04.jpg
+* one request finished True
+Invocation time average 17.85 s per job over 4 runs.
+Total invocation time across jobs 19.83 s, per job 9.915 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 79.33 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-1-False.csv
+Invocation time measurement. Parallelism: 4
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune__z7huf03.jpg
+→ /tmp/imagetune__zwq36sh.jpg
+→ /tmp/imagetune_gz__4gps.jpg
+→ /tmp/imagetune_cjv5mpge.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_9o9dkagb.jpg
+→ /tmp/imagetune_15ucnm0n.jpg
+* one request finished True
+→ /tmp/imagetune_u1q2bcv9.jpg
+→ /tmp/imagetune_eqxmfg4v.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+→ /tmp/imagetune_z_50xs9b.jpg
+→ /tmp/imagetune_k2o2cnid.jpg
+* one request finished True
+→ /tmp/imagetune_w2w31rm2.jpg
+→ /tmp/imagetune_7lu4epib.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune_s6s1oybs.jpg
+* one request finished True
+→ /tmp/imagetune_x0s71xm0.jpg
+* one request finished True
+→ /tmp/imagetune_lagpp_sf.jpg
+→ /tmp/imagetune_bpk1i61s.jpg
+* one request finished True
+* one request finished True
+Invocation time average 32.68 s per job over 4 runs.
+Total invocation time across jobs 36.17 s, per job 9.0425 s per round on average.
+Average successes 100.0 % out of 4 jobs.
+Grand total across all rounds 144.66 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-1-False.csv
+Invocation time measurement. Parallelism: 6
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_e0k7mnkd.jpg
+→→  /tmp/imagetune_uyq8l639.jpg
+/tmp/imagetune_nhibgp2p.jpg
+→ /tmp/imagetune_1omd76tg.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_z8eoxo0b.jpg
+* one request finished True
+→ /tmp/imagetune_72b30b3q.jpg
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+→ /tmp/imagetune_uz0vvxya.jpg
+→ /tmp/imagetune_2g0ond7b.jpg
+* one request finished True
+→ /tmp/imagetune_8le918mh.jpg
+→ /tmp/imagetune_c744u3m2.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_72i7sove.jpg
+→ /tmp/imagetune_b1d2voph.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune_sokhimaw.jpg
+→ /tmp/imagetune_yqkcsy3i.jpg
+* one request finished True
+→ /tmp/imagetune_2xboeg3m.jpg
+* one request finished True
+→ /tmp/imagetune_w07djghr.jpg
+* one request finished True
+→ /tmp/imagetune_z15cix53.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_krxwtpox.jpg
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+→ /tmp/imagetune_1gtoif6l.jpg
+→ /tmp/imagetune_9kvuxs31.jpg
+→ /tmp/imagetune_url1qvf3.jpg
+→ /tmp/imagetune_ppa797fe.jpg
+→ /tmp/imagetune_fnmd9lsu.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_6xfoaj6h.jpg
+* one request finished True
+Invocation time average 51.9 s per job over 4 runs.
+Total invocation time across jobs 54.34 s, per job 9.056666666666667 s per round on average.
+Average successes 100.0 % out of 6 jobs.
+Grand total across all rounds 217.38 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-1-False.csv
+Invocation time measurement. Parallelism: 8
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+→ /tmp/imagetune_a_e1hgnb.jpg
+→ /tmp/imagetune_0e4oyggb.jpg
+→ /tmp/imagetune_uj36gfx7.jpg
+→ /tmp/imagetune_eyk01sjt.jpg
+→ /tmp/imagetune_5dhhp6j7.jpg
+* one request finished True
+→ /tmp/imagetune_mur0o76n.jpg
+→ /tmp/imagetune_k0h_4q15.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_svky3xtu.jpg
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+→ /tmp/imagetune_bkzd6x4p.jpg
+→ /tmp/imagetune__wcu3ma0.jpg
+→ /tmp/imagetune_n6__6bsf.jpg
+→ /tmp/imagetune_owf6or_t.jpg
+* one request finished True
+→ /tmp/imagetune_jk39ervz.jpg
+→ /tmp/imagetune_sfl3eb2z.jpg
+* one request finished True
+→ /tmp/imagetune_k3gwi881.jpg
+→ /tmp/imagetune__p5xc2sw.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+→ /tmp/imagetune_ith75p7y.jpg
+→ /tmp/imagetune_w0fo15hq.jpg
+→ /tmp/imagetune_rldyr4bk.jpg
+* one request finished True
+→ /tmp/imagetune_ks2ebpoc.jpg
+→ /tmp/imagetune_gh_rev5_.jpg
+→ /tmp/imagetune_j1zh5lct.jpg
+→ /tmp/imagetune_mqsen72o.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_x5o6dycf.jpg
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+→ /tmp/imagetune_hsmjb0t8.jpg
+→ /tmp/imagetune_ebm14wig.jpg
+→ /tmp/imagetune_77b3u0sq.jpg
+* one request finished True
+→ /tmp/imagetune_j4p45zrq.jpg
+→ /tmp/imagetune_l9_1laaf.jpg
+→ /tmp/imagetune_7l9uxjyu.jpg
+→ /tmp/imagetune_61sisnnz.jpg
+→ /tmp/imagetune_ytqlu7dv.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 69.08 s per job over 4 runs.
+Total invocation time across jobs 72.68 s, per job 9.085 s per round on average.
+Average successes 100.0 % out of 8 jobs.
+Grand total across all rounds 290.72 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-1-False.csv
+Invocation time measurement. Parallelism: 10
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+→ /tmp/imagetune_frmlh1iu.jpg
+→ /tmp/imagetune_a9ih2u_p.jpg
+* one request finished True
+→ /tmp/imagetune_hpd_m1_8.jpg
+→ /tmp/imagetune_ofh1wcnd.jpg
+→ /tmp/imagetune_q7emlwge.jpg
+→ /tmp/imagetune_ps50y4hh.jpg
+→ /tmp/imagetune__618is10.jpg
+→ /tmp/imagetune_9oisuci_.jpg
+→ /tmp/imagetune_pyeqqv8c.jpg
+→ /tmp/imagetune_2p3dcf1j.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+→ /tmp/imagetune_ubxt0ywj.jpg
+* one request finished True
+→ /tmp/imagetune_z1h4g4ck.jpg
+→ /tmp/imagetune_0z0nc8ms.jpg
+→ /tmp/imagetune_63aj4y9h.jpg
+→ /tmp/imagetune_hcrmp29u.jpg
+→ /tmp/imagetune_19wdetx2.jpg
+→ /tmp/imagetune_286o4mrt.jpg
+* one request finished True
+→ /tmp/imagetune_03ewc549.jpg
+→ /tmp/imagetune_g2e7v2lm.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_0m71j1a2.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune_tct57afh.jpg
+→ /tmp/imagetune_nxvp1ekr.jpg
+→ /tmp/imagetune_pjp08mln.jpg
+→ /tmp/imagetune_l8yzuwnu.jpg
+→ /tmp/imagetune_5j79fsl3.jpg
+→ /tmp/imagetune_l52gqg9h.jpg
+→ /tmp/imagetune_somxi4or.jpg
+→ /tmp/imagetune_cyjar4l0.jpg
+→ /tmp/imagetune_o5std9nb.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_16oznwm1.jpg
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune_qliepxvy.jpg
+→ /tmp/imagetune_umjrlcoo.jpg
+→ /tmp/imagetune_ji5kzcu9.jpg
+→ /tmp/imagetune_t92aqh62.jpg
+→ /tmp/imagetune_ly47fp41.jpg
+→ /tmp/imagetune_m9yxhp7a.jpg
+→ /tmp/imagetune_8l7n9ofn.jpg
+→ /tmp/imagetune_wspyjzbd.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_9ak875io.jpg
+→ /tmp/imagetune_z_4_e6np.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 87.08 s per job over 4 runs.
+Total invocation time across jobs 91.27 s, per job 9.126999999999999 s per round on average.
+Average successes 100.0 % out of 10 jobs.
+Grand total across all rounds 365.07 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-1-False.csv
+Invocation time measurement. Parallelism: 12
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune_shdjyka6.jpg
+→ /tmp/imagetune_9p_ito_6.jpg
+→ /tmp/imagetune_eyrsfe23.jpg
+→ /tmp/imagetune_55m6oao4.jpg
+→ /tmp/imagetune_3m7jdz2z.jpg
+→ /tmp/imagetune_95o431ua.jpg
+→ /tmp/imagetune_nr52jt5s.jpg
+* one request finished True
+→ /tmp/imagetune_3htqvyom.jpg
+→→ /tmp/imagetune_gh1yilkt.jpg
+* one request finished  /tmp/imagetune_tc4a2wyy.jpgTrue
+
+→ /tmp/imagetune_q5qbqu5p.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_z4cme4hz.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_l4gp1fha.jpg
+→ /tmp/imagetune_b5tuvtti.jpg
+→ /tmp/imagetune_u32fm64o.jpg
+→ /tmp/imagetune_g2us65ze.jpg
+→ /tmp/imagetune_6bj7zmyl.jpg
+→ /tmp/imagetune_llk9qlg4.jpg
+→ /tmp/imagetune_tq2fp7k_.jpg
+→ /tmp/imagetune__ofluo8j.jpg
+→ /tmp/imagetune_pfvfquy1.jpg
+→ /tmp/imagetune_yzmfo7wc.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_0wimutmu.jpg
+* one request finished True
+→ /tmp/imagetune_2v12feyi.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+→ /tmp/imagetune_jdzqed57.jpg
+→ /tmp/imagetune_0ne8q8u7.jpg
+→ /tmp/imagetune_ugrpocqf.jpg
+* one request finished True
+→ /tmp/imagetune__ic5jkxr.jpg
+→ /tmp/imagetune_z_l485as.jpg
+→ /tmp/imagetune_3xv5t2pm.jpg
+→ /tmp/imagetune_78bfojpe.jpg
+→ /tmp/imagetune_sr0x9nu2.jpg
+→ /tmp/imagetune_kk0f5o3s.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_nn3degje.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_91zwmmcs.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_ck64xa3_.jpg
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_w66k7u2l.jpg
+→ /tmp/imagetune_ly96v0oy.jpg
+→ /tmp/imagetune_50oraqvl.jpg
+→ /tmp/imagetune_v57y23pg.jpg
+→ /tmp/imagetune_2m9730ie.jpg
+→ /tmp/imagetune_szys3w6m.jpg
+* one request finished True
+→ /tmp/imagetune_7rkmlt5i.jpg
+→ /tmp/imagetune_mduxdf85.jpg
+→ /tmp/imagetune_wexsu2tv.jpg
+→→ /tmp/imagetune_jm2o3wb7.jpg
+ /tmp/imagetune_bx96gx_c.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_dgmxkf8o.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 106.82 s per job over 4 runs.
+Total invocation time across jobs 110.25 s, per job 9.1875 s per round on average.
+Average successes 100.0 % out of 12 jobs.
+Grand total across all rounds 440.99 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-12-1-False.csv
+Invocation time measurement. Parallelism: 14
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+→ /tmp/imagetune_gzsk2vm1.jpg
+→ /tmp/imagetune_3su_6u7r.jpg
+→ /tmp/imagetune_2745iwif.jpg
+→ /tmp/imagetune_ftylabna.jpg
+→ /tmp/imagetune_tjbrjbuc.jpg
+→ /tmp/imagetune_hrahpkdx.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_lktgtqoe.jpg
+→ /tmp/imagetune_njkxj7wm.jpg
+→ /tmp/imagetune_h_j203yn.jpg
+→ /tmp/imagetune_jpxf61zn.jpg
+→ /tmp/imagetune_8b5fxctt.jpg
+→ /tmp/imagetune_b8xwv5r0.jpg
+→ /tmp/imagetune_q5xj7thi.jpg
+→ /tmp/imagetune_dneghgg3.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune_cclvb2in.jpg
+→ /tmp/imagetune_m317b7zu.jpg
+→ /tmp/imagetune_geqs2c2b.jpg
+→ /tmp/imagetune_vgy54xd_.jpg
+→ /tmp/imagetune_6jdvrhm8.jpg
+→ /tmp/imagetune_edbll95o.jpg
+* one request finished True
+→ /tmp/imagetune_dkhcwfw9.jpg
+→ /tmp/imagetune_ev00oaml.jpg
+→ /tmp/imagetune_b_0cu2w7.jpg
+→ /tmp/imagetune_jp14sq4k.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_r678p7eo.jpg
+→ /tmp/imagetune_te_0su75.jpg
+→ /tmp/imagetune_n8pf764y.jpg
+→ /tmp/imagetune_eiu1rwsi.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+→ /tmp/imagetune_s9aj196f.jpg
+→ /tmp/imagetune_wfivzzxt.jpg
+→ /tmp/imagetune_s819d2bs.jpg
+→ /tmp/imagetune_t5jzxs2f.jpg
+* one request finished True
+→ /tmp/imagetune_g5njwqj5.jpg
+→ /tmp/imagetune_qpo1s_fa.jpg
+→ /tmp/imagetune_s03rhqz7.jpg
+→ /tmp/imagetune_zciw7ac3.jpg
+→ /tmp/imagetune_xpxt7zc7.jpg
+→ /tmp/imagetune_wl49mpfb.jpg
+→ /tmp/imagetune_9_dq6og0.jpg
+→ /tmp/imagetune_pe8hbq6t.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_bn4mhwiz.jpg
+→ /tmp/imagetune_tq7ukeod.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+→ /tmp/imagetune_xajvlbm4.jpg
+→ /tmp/imagetune_5yuvywti.jpg
+→ /tmp/imagetune_xfeaqyqr.jpg
+→ /tmp/imagetune_xm40k44z.jpg
+→ /tmp/imagetune_k6afl69d.jpg
+→→  /tmp/imagetune_ucb0cy3w.jpg
+/tmp/imagetune_kfdv1h6d.jpg
+→ /tmp/imagetune_6hmlb2bt.jpg
+* one request finished True
+→ /tmp/imagetune_d1gei28o.jpg
+→ /tmp/imagetune_fr_f9z64.jpg
+→ /tmp/imagetune_t9wpkg0n.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_oi28nkz1.jpg
+→ /tmp/imagetune_o9enop45.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_w464i3rr.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 125.74 s per job over 4 runs.
+Total invocation time across jobs 129.31 s, per job 9.236428571428572 s per round on average.
+Average successes 100.0 % out of 14 jobs.
+Grand total across all rounds 517.22 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-14-1-False.csv
+Invocation time measurement. Parallelism: 16
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_kobloeux.jpg
+→ /tmp/imagetune_pm59bhlc.jpg
+→ /tmp/imagetune_4ftr0y3d.jpg
+→ /tmp/imagetune_go2ug8zy.jpg
+→ /tmp/imagetune_qcj099yd.jpg
+→ /tmp/imagetune_bwufjpe0.jpg
+→ /tmp/imagetune_pvf6mrs7.jpg
+→ /tmp/imagetune_c3k2yre9.jpg
+→ /tmp/imagetune_4f4j76ev.jpg
+→ /tmp/imagetune_2g712nfv.jpg
+→ /tmp/imagetune_mu7qh0en.jpg
+→ /tmp/imagetune_0mgwm01y.jpg
+→ /tmp/imagetune_6wacazy2.jpg
+→ /tmp/imagetune_yuzlpfbz.jpg
+→ /tmp/imagetune_rrdlhy84.jpg
+→ /tmp/imagetune_7mpsqu3c.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+→ /tmp/imagetune_jny40hwq.jpg
+→ /tmp/imagetune__d20n5z_.jpg
+→ /tmp/imagetune_wylbj3k5.jpg
+→ /tmp/imagetune_rvgzb8og.jpg
+→ /tmp/imagetune_8_4q1tas.jpg
+→ /tmp/imagetune_pkj4k4l4.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_et_zgylx.jpg
+→ /tmp/imagetune_elfu68ua.jpg
+→ /tmp/imagetune_vm6qd2mo.jpg
+→ /tmp/imagetune_sy23k7wx.jpg
+→→ /tmp/imagetune_vdvklmv3.jpg
+ /tmp/imagetune__8u0kl66.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_1meywiys.jpg
+→ /tmp/imagetune_c7qasquu.jpg
+→ /tmp/imagetune_4sjgmsc0.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_f5p6jo36.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_ox_l6zrq.jpg
+→ /tmp/imagetune_dkgm18g9.jpg
+→ /tmp/imagetune_gjmwfibv.jpg
+→ /tmp/imagetune_vckvojax.jpg
+→ /tmp/imagetune_gx76k8ky.jpg
+→ /tmp/imagetune_x_ipr95l.jpg
+→ /tmp/imagetune_rebtgha0.jpg
+→ /tmp/imagetune_ltu8j_3a.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_dgk_dk3q.jpg
+→ /tmp/imagetune_84zj250q.jpg
+→ /tmp/imagetune__nqtoiau.jpg
+→ /tmp/imagetune_d735al73.jpg
+→ /tmp/imagetune_ag52rmi6.jpg
+→ /tmp/imagetune_hw16_600.jpg
+→ /tmp/imagetune_5w0e1hew.jpg
+→ /tmp/imagetune_vxsq9qux.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+→ /tmp/imagetune_udyt82_8.jpg
+→ /tmp/imagetune_j4rp2opo.jpg
+→ /tmp/imagetune_vmd7abux.jpg
+→ /tmp/imagetune_g3fo1oel.jpg
+* one request finished True
+→ /tmp/imagetune_gwqk_kxc.jpg
+→ /tmp/imagetune_a7ezdlt5.jpg
+→ /tmp/imagetune_nm6upmh5.jpg
+* one request finished True
+→ /tmp/imagetune_v55mw9i0.jpg
+→ /tmp/imagetune_dn09jni4.jpg
+→ /tmp/imagetune_8_h7em95.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_5roy16lz.jpg
+→ /tmp/imagetune_h2xf5kgd.jpg
+→ /tmp/imagetune_zdz6sd_u.jpg
+→ /tmp/imagetune_08zjewju.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_8t1cjte9.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_6ibje30c.jpg
+* one request finished True
+Invocation time average 145.01 s per job over 4 runs.
+Total invocation time across jobs 148.59 s, per job 9.286875 s per round on average.
+Average successes 100.0 % out of 16 jobs.
+Grand total across all rounds 594.36 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-16-1-False.csv
+Invocation time measurement. Parallelism: 18
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_fct0em4p.jpg
+→ /tmp/imagetune_9j7i4kkj.jpg
+→ /tmp/imagetune_rr5ivz6z.jpg
+→ /tmp/imagetune_b23z4i14.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_dpoy5y40.jpg
+→ /tmp/imagetune__5pq9euv.jpg
+→ /tmp/imagetune_czw_awli.jpg
+→ /tmp/imagetune_1waig6dk.jpg
+→ /tmp/imagetune_t8kmc7w3.jpg
+→ /tmp/imagetune_bz4qvg27.jpg
+→ /tmp/imagetune_qbt100s2.jpg
+→ /tmp/imagetune_d_7afy4y.jpg
+→ /tmp/imagetune_zcb9d_95.jpg
+→ /tmp/imagetune_713rtro0.jpg
+→ /tmp/imagetune_cektk29w.jpg
+→ /tmp/imagetune_5cl6jt_x.jpg
+→ /tmp/imagetune_rxy2r8hp.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_p8z09gvs.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+→ /tmp/imagetune_xqibw5yw.jpg
+→ /tmp/imagetune_qsw363tz.jpg
+→ /tmp/imagetune__jtg26p4.jpg
+→ /tmp/imagetune_9zcedpiw.jpg
+→ /tmp/imagetune_1lrnros3.jpg
+→ /tmp/imagetune_plksb6r2.jpg
+→ /tmp/imagetune_59k4jfs6.jpg
+→ /tmp/imagetune_83wpqwhd.jpg
+→ /tmp/imagetune_yux2feco.jpg
+→ /tmp/imagetune_vcio68_y.jpg
+→ /tmp/imagetune_ryswt9j2.jpg
+* one request finished True
+→ /tmp/imagetune_492z3oz1.jpg
+→ /tmp/imagetune_d1lwu6fp.jpg
+→ /tmp/imagetune_smhcpulv.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_aqbsbezn.jpg
+* one request finished True
+→ /tmp/imagetune_k2fmzbzq.jpg
+→ /tmp/imagetune_8sua9i2x.jpg
+→ /tmp/imagetune_9enfir9t.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_183w6i_c.jpg
+→ /tmp/imagetune_am9l4qve.jpg
+→ /tmp/imagetune_ac2ebxxj.jpg
+→ /tmp/imagetune_gcdhx80l.jpg
+→ /tmp/imagetune_mm559l8_.jpg
+→ /tmp/imagetune_vm9syzmp.jpg
+→ /tmp/imagetune_wuqq1f52.jpg
+→ /tmp/imagetune_ders4smj.jpg
+→ /tmp/imagetune_kkm2r2md.jpg
+→ /tmp/imagetune_s1773jjo.jpg
+→ /tmp/imagetune_df_r89ix.jpg
+→ /tmp/imagetune_zo9tbrg6.jpg
+→ /tmp/imagetune_kgzvbfx9.jpg
+→ /tmp/imagetune_94bqmcdp.jpg
+→ /tmp/imagetune_ehp2qs9y.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_5i8_jy03.jpg
+→ /tmp/imagetune_1bb51h3h.jpg
+→ /tmp/imagetune_ooos2syr.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+→ /tmp/imagetune_fnjtpmzj.jpg
+→ /tmp/imagetune_e_ap__ic.jpg
+→ /tmp/imagetune_wqbu66a6.jpg
+→ /tmp/imagetune_jzqq81oi.jpg
+→ /tmp/imagetune_azfbzt6s.jpg
+→ /tmp/imagetune_ggz943a7.jpg
+→→ /tmp/imagetune_n61yz2jj.jpg
+ /tmp/imagetune_yxg6fd5b.jpg
+→ /tmp/imagetune_vmhxja11.jpg
+→ /tmp/imagetune_01_hfjqz.jpg
+→ /tmp/imagetune_0xmwxk2w.jpg
+→ /tmp/imagetune_3hswx3mq.jpg
+→ /tmp/imagetune_s1ot541s.jpg
+→ /tmp/imagetune_agd5hbpx.jpg
+→ /tmp/imagetune_yldouqya.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_ib3k30k8.jpg
+→→ /tmp/imagetune_azxizu0z.jpg
+ /tmp/imagetune_onghvdpy.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 164.23 s per job over 4 runs.
+Total invocation time across jobs 167.74 s, per job 9.318888888888889 s per round on average.
+Average successes 100.0 % out of 18 jobs.
+Grand total across all rounds 670.95 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-18-1-False.csv
+Invocation time measurement. Parallelism: 20
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.30:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+→ /tmp/imagetune_na2wc6zh.jpg
+→ /tmp/imagetune_5kuuko57.jpg
+→ /tmp/imagetune_3jyya9h6.jpg
+→ /tmp/imagetune_4b4hf5_1.jpg
+→ /tmp/imagetune_ktuj686y.jpg
+→ /tmp/imagetune_v9ju97qf.jpg
+→ /tmp/imagetune_u117pd2n.jpg
+→ /tmp/imagetune_qpzrzkkv.jpg
+→ /tmp/imagetune_6uzb_e45.jpg
+→ /tmp/imagetune_4zn0e1ji.jpg
+→ /tmp/imagetune_ywl4v9bt.jpg
+→ /tmp/imagetune_j2s6tjvy.jpg
+→ /tmp/imagetune_57ooxof7.jpg
+→ /tmp/imagetune_jwjp54x7.jpg
+→ /tmp/imagetune_zc8zy82d.jpg
+→ /tmp/imagetune_rtiihdqp.jpg
+→ /tmp/imagetune_u3zmqzlb.jpg
+→ /tmp/imagetune_nwjqa6nu.jpg
+→ /tmp/imagetune_3eubc3yr.jpg
+→ /tmp/imagetune_pmp13cwk.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+→ /tmp/imagetune_5bvw7l6w.jpg
+→ /tmp/imagetune_uq0v0ufs.jpg
+→ /tmp/imagetune_1a6po9p0.jpg
+→ /tmp/imagetune_11od5218.jpg
+→ /tmp/imagetune_4z1a5zrb.jpg
+→→ /tmp/imagetune_cxqv7z5k.jpg
+ /tmp/imagetune_t85ay8u7.jpg
+→ /tmp/imagetune_x4fy91kd.jpg
+→ /tmp/imagetune_t14bctq_.jpg
+→ /tmp/imagetune_eelh_uq1.jpg
+→ /tmp/imagetune_lb0328ih.jpg
+→ /tmp/imagetune_ci87q1to.jpg
+→ /tmp/imagetune_oqtnbux1.jpg
+→ /tmp/imagetune_oabk5qpg.jpg
+→ /tmp/imagetune_y_sgpgcm.jpg
+→ /tmp/imagetune_7ldlhwjf.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_0b6axeg0.jpg
+→ /tmp/imagetune_v_7b7tpu.jpg
+→ /tmp/imagetune_5lc__063.jpg
+→ /tmp/imagetune_874ozixy.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 1
+→ /tmp/imagetune_i4qhnt6g.jpg
+→ /tmp/imagetune_zqaygzwp.jpg
+→ /tmp/imagetune_t5vwahyx.jpg
+→ /tmp/imagetune_mjzw7pic.jpg
+→ /tmp/imagetune_bytxx9mg.jpg
+→ /tmp/imagetune_ropwjyuh.jpg
+→ /tmp/imagetune_92w8yoxn.jpg
+→ /tmp/imagetune_pz1ycjdy.jpg
+→ /tmp/imagetune_qywi9jl9.jpg
+→ /tmp/imagetune_xhn0yqdv.jpg
+→ /tmp/imagetune_4gv1i4j3.jpg
+→ /tmp/imagetune_vk5josf_.jpg
+→ /tmp/imagetune_53ioystk.jpg
+→ /tmp/imagetune_lremluq7.jpg
+→ /tmp/imagetune_ejxmewuq.jpg
+→ /tmp/imagetune_dgzq97bg.jpg
+→ /tmp/imagetune_1v76zaax.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_bph6tp28.jpg
+→ /tmp/imagetune_eez6sylx.jpg
+→ /tmp/imagetune_weiuhqef.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 4
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+* start request http://192.168.0.30:8080 with delay 0
+* start request http://192.168.0.30:8080 with delay 2
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 1
+→ /tmp/imagetune_c91a06hp.jpg
+→ /tmp/imagetune_hak6ay0v.jpg
+→ /tmp/imagetune_u3wkb7zi.jpg
+→ /tmp/imagetune_3dmeq50x.jpg
+* one request finished True
+→ /tmp/imagetune_oobc_1en.jpg
+→ /tmp/imagetune_qs8xzjd6.jpg
+→ /tmp/imagetune_8rg3nzt5.jpg
+→ /tmp/imagetune__lfyrso5.jpg
+→ /tmp/imagetune_vu85jfit.jpg
+→ /tmp/imagetune_weznky_x.jpg
+→ /tmp/imagetune_dmv2nj5y.jpg
+→ /tmp/imagetune_lxixr4e4.jpg
+→ /tmp/imagetune_aqyacpkz.jpg
+* one request finished True
+→ /tmp/imagetune_jyqycyie.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_d7xlh88l.jpg
+→ /tmp/imagetune_6668fipt.jpg
+→ /tmp/imagetune_r3_hvtgk.jpg
+→ /tmp/imagetune_wu5p1p66.jpg
+→ /tmp/imagetune_y2h6sa6j.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_z7b1ws1p.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 183.08 s per job over 4 runs.
+Total invocation time across jobs 187.21 s, per job 9.3605 s per round on average.
+Average successes 100.0 % out of 20 jobs.
+Grand total across all rounds 748.84 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-20-1-False.csv
+Overall experiment time 4069.62 s.
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+Terminating 1 nodes...
+No exception - likely terminated regularly.
+./testnodes.sh: line 46: kill: (28859) - No such process
+sleep 3
+=== End of experiment ===
+=> Experiment results: experiments/exp6332
+=== Topology preparation === :: baseline-fog.topology
+=== Topology preparation === :: baseline-fog.topology

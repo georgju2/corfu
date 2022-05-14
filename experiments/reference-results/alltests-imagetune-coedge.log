@@ -1,0 +1,547 @@
+Sam 2 Wím 16:53:25 CEST 2021
+=== Topology preparation === :: baseline-coedge.topology
+[sudo] password for spio: Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-flask is already the newest version (1.1.2-2).
+python3-matplotlib is already the newest version (3.3.4-1).
+python3-scipy is already the newest version (1.6.0-2).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /imagetune/processimage/foggy-path-landscape.jpg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+→ /tmp/imagetune_zvgib2w0.jpg
+* one request finished True
+→ /tmp/imagetune_8f166pv6.jpg
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+→ /tmp/imagetune_pbobtcro.jpg
+→ /tmp/imagetune_e4yccdr3.jpg
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+→ /tmp/imagetune_uinrt2rg.jpg
+→ /tmp/imagetune_faamzkjq.jpg
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+→ /tmp/imagetune_iqikciiz.jpg
+→ /tmp/imagetune_gwaj7y2s.jpg
+* one request finished True
+* one request finished True
+Invocation time average 91.08 s per job over 4 runs.
+Total invocation time across jobs 94.25 s, per job 47.125 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 376.99 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-1-False.csv
+Invocation time measurement. Parallelism: 4
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+→ /tmp/imagetune_jnye7zx1.jpg
+→ /tmp/imagetune_7ztuxxsr.jpg
+* one request finished True
+→ /tmp/imagetune_v0fqy4wi.jpg
+→ /tmp/imagetune_9h2md3nf.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+→ /tmp/imagetune_l33dhxmj.jpg
+* one request finished True
+→ /tmp/imagetune_vg6oq5ns.jpg
+→ /tmp/imagetune_ig8z7oim.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_7du13a5j.jpg
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+→ /tmp/imagetune_8matvg8t.jpg
+→ /tmp/imagetune_xppjj3k7.jpg
+→ /tmp/imagetune_q1m6yrkq.jpg
+* one request finished True
+→ /tmp/imagetune_esg5vo0g.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+→ /tmp/imagetune_zczwzibj.jpg
+* one request finished True
+→ /tmp/imagetune_b3srxm2v.jpg
+→ /tmp/imagetune_ek3hir2g.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_rgyh0xeb.jpg
+* one request finished True
+Invocation time average 179.11 s per job over 4 runs.
+Total invocation time across jobs 182.98 s, per job 45.745 s per round on average.
+Average successes 100.0 % out of 4 jobs.
+Grand total across all rounds 731.91 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-1-False.csv
+Invocation time measurement. Parallelism: 6
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+→ /tmp/imagetune_b7f0eao5.jpg
+→ /tmp/imagetune_cfnrbbmv.jpg
+→ /tmp/imagetune_y67j8wlt.jpg
+→ /tmp/imagetune_y7vmaofe.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_cdu1_mov.jpg
+→ /tmp/imagetune_x3844ibt.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+→ /tmp/imagetune_by350m9y.jpg
+→ /tmp/imagetune_i43igq46.jpg
+→ /tmp/imagetune_4z87cvhx.jpg
+* one request finished True
+→ /tmp/imagetune_28x4f_qa.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_vtcyztey.jpg
+* one request finished True
+→ /tmp/imagetune_0phzd70i.jpg
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+→ /tmp/imagetune_t_zopp_p.jpg
+→ /tmp/imagetune_aas7xsmp.jpg
+* one request finished True
+→ /tmp/imagetune_84fiapiy.jpg
+→ /tmp/imagetune_f6za2jnu.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_orfhd5h0.jpg
+→ /tmp/imagetune_im7lu2wo.jpg
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+→ /tmp/imagetune_1qigsjg2.jpg
+→ /tmp/imagetune_325lv_cl.jpg
+→ /tmp/imagetune_85jv3lcw.jpg
+→ /tmp/imagetune_rduye97m.jpg
+→ /tmp/imagetune_62i_wn2b.jpg
+→ /tmp/imagetune_7d9xykfu.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 267.2 s per job over 4 runs.
+Total invocation time across jobs 271.66 s, per job 45.27666666666667 s per round on average.
+Average successes 100.0 % out of 6 jobs.
+Grand total across all rounds 1086.65 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-1-False.csv
+Invocation time measurement. Parallelism: 8
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+→ /tmp/imagetune_zq_6nvtu.jpg
+→ /tmp/imagetune_il00y73_.jpg
+→ /tmp/imagetune_n9qy31nr.jpg
+→ /tmp/imagetune_4hfbyqmh.jpg
+→ /tmp/imagetune_hggxblr0.jpg
+→ /tmp/imagetune_x12jjoii.jpg
+→ /tmp/imagetune_o69va8qq.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_zrdwh8dr.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+→ /tmp/imagetune_ao8xouvp.jpg
+→ /tmp/imagetune_hrej7xzz.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_547m0n3y.jpg
+→ /tmp/imagetune_txehjj1t.jpg
+* one request finished True
+→ /tmp/imagetune_qy_tk0ra.jpg
+* one request finished True
+→ /tmp/imagetune_bo96m_2q.jpg
+→ /tmp/imagetune_h6c2rejp.jpg
+→ /tmp/imagetune__w6rebhg.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+→ /tmp/imagetune__19a4ssk.jpg
+→ /tmp/imagetune_u3nrfcme.jpg
+→ /tmp/imagetune_zfvnk2c_.jpg
+→ /tmp/imagetune_do81lk3h.jpg
+→ /tmp/imagetune_l6j0r91q.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_zt7fnl8f.jpg
+→ /tmp/imagetune_pws_kz2s.jpg
+→ /tmp/imagetune_8oss5j17.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+→ /tmp/imagetune_13ymohr0.jpg
+→ /tmp/imagetune_gsrx6kkb.jpg
+* one request finished True
+→ /tmp/imagetune_p_4ij9o_.jpg
+→ /tmp/imagetune_gafo9jmw.jpg
+* one request finished True
+→ /tmp/imagetune_8znfrldi.jpg
+→ /tmp/imagetune_qhiw5iy2.jpg
+→ /tmp/imagetune_aapniry1.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_ac_blk19.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 360.44 s per job over 4 runs.
+Total invocation time across jobs 366.01 s, per job 45.75125 s per round on average.
+Average successes 100.0 % out of 8 jobs.
+Grand total across all rounds 1464.03 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-1-False.csv
+Invocation time measurement. Parallelism: 10
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+→ /tmp/imagetune_m7a0umha.jpg
+→ /tmp/imagetune_kquvxazf.jpg
+→ /tmp/imagetune_rmxopyuz.jpg
+* one request finished True
+→ /tmp/imagetune_0blz4fyp.jpg
+* one request finished True
+→ /tmp/imagetune_r2hfqmua.jpg
+→ /tmp/imagetune_8ls6qsty.jpg
+→ /tmp/imagetune_1715fw6v.jpg
+→ /tmp/imagetune_wb6ecfcv.jpg
+→ /tmp/imagetune_2gzakubb.jpg
+→ /tmp/imagetune_aeovik6c.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+→ /tmp/imagetune_8oelmfml.jpg
+→ /tmp/imagetune_4ds_6ssx.jpg
+→ /tmp/imagetune_3et9qm_2.jpg
+→ /tmp/imagetune_ar8bj319.jpg
+→ /tmp/imagetune_mp9wp25w.jpg
+→ /tmp/imagetune_3gb_sslp.jpg
+→ /tmp/imagetune_s5v8bcus.jpg
+→ /tmp/imagetune_ndsif_vz.jpg
+→ /tmp/imagetune_whzg6jhq.jpg
+* one request finished True
+→ /tmp/imagetune_e3i72lxt.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+→ /tmp/imagetune_jduj9a_p.jpg
+→ /tmp/imagetune_k7qg90kw.jpg
+→ /tmp/imagetune_iesy1y3p.jpg
+→ /tmp/imagetune_hvxcbgkp.jpg
+→ /tmp/imagetune_hzxpx180.jpg
+→ /tmp/imagetune_v5sbsp2r.jpg
+→ /tmp/imagetune_noskqh53.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_gr420bsu.jpg
+→ /tmp/imagetune_ded9_08w.jpg
+→ /tmp/imagetune_tywb9dj3.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+→ /tmp/imagetune_d9yduv4f.jpg
+→ /tmp/imagetune_pmw45zc2.jpg
+→ /tmp/imagetune_dve4ge_d.jpg
+→ /tmp/imagetune_rqbywmsz.jpg
+→ /tmp/imagetune_5o3ttn_y.jpg
+→ /tmp/imagetune_prue5wju.jpg
+→ /tmp/imagetune_t_kv1cuv.jpg
+→ /tmp/imagetune_b25jxrbt.jpg
+→ /tmp/imagetune_h8hmgwn4.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_vv91disl.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 459.98 s per job over 4 runs.
+Total invocation time across jobs 469.94 s, per job 46.994 s per round on average.
+Average successes 100.0 % out of 10 jobs.
+Grand total across all rounds 1879.75 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-1-False.csv
+Invocation time measurement. Parallelism: 12
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+→ /tmp/imagetune_lp_1k1bd.jpg
+→ /tmp/imagetune_7q710973.jpg
+→ /tmp/imagetune_c1tsjya5.jpg
+→ /tmp/imagetune_a96ecox5.jpg
+→ /tmp/imagetune_b_ix5hpi.jpg
+* one request finished True
+→ /tmp/imagetune_e3cqanqw.jpg
+→ /tmp/imagetune_9n6ot9e7.jpg
+→ /tmp/imagetune_vj7461b0.jpg
+→ /tmp/imagetune_hmmf_tgo.jpg
+→ /tmp/imagetune_eaifenpe.jpg
+→ /tmp/imagetune_de5i3ye4.jpg
+* one request finished True
+* one request finished True
+→ /tmp/imagetune_f577j43j.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+→ /tmp/imagetune_o7x02isy.jpg
+→ /tmp/imagetune_jfg8n2zc.jpg
+→ /tmp/imagetune_zvhmbntq.jpg
+→ /tmp/imagetune_ie_2p1d9.jpg
+→ /tmp/imagetune_6rdq1kdx.jpg
+→ /tmp/imagetune_c5ipd_i5.jpg
+→ /tmp/imagetune_t581cuqg.jpg
+→ /tmp/imagetune_lxwo1275.jpg
+→ /tmp/imagetune_mlms7lnd.jpg
+→ /tmp/imagetune_o66desnj.jpg
+* one request finished True
+→ /tmp/imagetune_u2gf9xsj.jpg
+→ /tmp/imagetune_y_6w4dmv.jpg
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+./testnodes.sh: line 48: kill: (2567) - No such process
+sleep 3
+=== End of experiment ===
+=> Experiment results: experiments/exp3860

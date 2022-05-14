@@ -1,0 +1,1494 @@
+Sam 2 Wím 08:16:49 CEST 2021
+=== Topology preparation === :: baseline-coedge.topology
+[sudo] password for spio: Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-flask is already the newest version (1.1.2-2).
+python3-matplotlib is already the newest version (3.3.4-1).
+python3-scipy is already the newest version (1.6.0-2).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /linreg/linreg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Invocation time average 107.56 s per job over 4 runs.
+Total invocation time across jobs 110.59 s, per job 55.295 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 442.37 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-1-False.csv
+Invocation time measurement. Parallelism: 4
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 214.18 s per job over 4 runs.
+Total invocation time across jobs 218.19 s, per job 54.5475 s per round on average.
+Average successes 100.0 % out of 4 jobs.
+Grand total across all rounds 872.76 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-1-False.csv
+Invocation time measurement. Parallelism: 6
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 353.28 s per job over 4 runs.
+Total invocation time across jobs 358.0 s, per job 59.666666666666664 s per round on average.
+Average successes 100.0 % out of 6 jobs.
+Grand total across all rounds 1431.99 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-1-False.csv
+Invocation time measurement. Parallelism: 8
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 537.35 s per job over 4 runs.
+Total invocation time across jobs 574.76 s, per job 71.845 s per round on average.
+Average successes 75.0 % out of 8 jobs.
+Grand total across all rounds 2299.05 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-1-False.csv
+Invocation time measurement. Parallelism: 10
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 688.19 s per job over 4 runs.
+Total invocation time across jobs 783.47 s, per job 78.34700000000001 s per round on average.
+Average successes 60.0 % out of 10 jobs.
+Grand total across all rounds 3133.9 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-1-False.csv
+Invocation time measurement. Parallelism: 12
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 786.68 s per job over 4 runs.
+Total invocation time across jobs 954.48 s, per job 79.54 s per round on average.
+Average successes 50.0 % out of 12 jobs.
+Grand total across all rounds 3817.91 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-12-1-False.csv
+Invocation time measurement. Parallelism: 14
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+→→ 
+ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 862.36 s per job over 4 runs.
+Total invocation time across jobs 1054.91 s, per job 75.35071428571429 s per round on average.
+Average successes 42.86 % out of 14 jobs.
+Grand total across all rounds 4219.62 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-14-1-False.csv
+Invocation time measurement. Parallelism: 16
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+* one request finished False
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 939.25 s per job over 4 runs.
+Total invocation time across jobs 1133.77 s, per job 70.860625 s per round on average.
+Average successes 37.5 % out of 16 jobs.
+Grand total across all rounds 4535.06 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-16-1-False.csv
+Invocation time measurement. Parallelism: 18
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ INFERRED OK
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 1015.18 s per job over 4 runs.
+Total invocation time across jobs 1239.73 s, per job 68.87388888888889 s per round on average.
+Average successes 33.33 % out of 18 jobs.
+Grand total across all rounds 4958.92 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-18-1-False.csv
+Invocation time measurement. Parallelism: 20
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Initiate load-balancing connection...
+Skipping load balancing for single node.
+Round 0 @ new node http://192.168.0.60:8080 total nodes 1
+Subround 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+→ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 0
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Subround 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 3
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 4
+* start request http://192.168.0.60:8080 with delay 0
+* start request http://192.168.0.60:8080 with delay 2
+* start request http://192.168.0.60:8080 with delay 1
+* start request http://192.168.0.60:8080 with delay 1
+→ 
+→ 
+→ 
+→ 
+→ 
+→→ 
+ 
+→ 
+→ 
+→ 
+→ 
+* one request finished False
+→ 
+→ 
+→ 
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished False
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 1138.99 s per job over 4 runs.
+Total invocation time across jobs 1315.67 s, per job 65.7835 s per round on average.
+Average successes 30.0 % out of 20 jobs.
+Grand total across all rounds 5262.67 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-20-1-False.csv
+Overall experiment time 30975.16 s.
+[topology] spio@192.168.0.60:8080 → spio 192.168.0.60 8080
+Terminating 1 nodes...
+No exception - likely terminated regularly.
+./testnodes.sh: line 48: kill: (1355) - No such process
+sleep 3
+=== End of experiment ===
+=> Experiment results: experiments/exp6935

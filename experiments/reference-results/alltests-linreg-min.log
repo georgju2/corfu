@@ -1,0 +1,513 @@
+=== Topology preparation === :: testclient.topology
+sudo: Kein TTY vorhanden und kein »askpass«-Programm angegeben
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-flask is already the newest version (1.1.1-2).
+python3-matplotlib is already the newest version (3.1.2-1ubuntu4).
+python3-scipy is already the newest version (1.3.3-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-flask is already the newest version (1.1.1-2).
+python3-matplotlib is already the newest version (3.1.2-1ubuntu4).
+python3-scipy is already the newest version (1.3.3-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+=== Safety startup interval after topology preparation ===
+=== Testclient invocation ===
+Experiment starting.
+Endpoint: /linreg/linreg
+
+Configuration: par range(2, 21, 2) nodes 1 subrounds 4
+Invocation time measurement. Parallelism: 2
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://192.168.0.30:8080 with delay 3
+* start request http://192.168.0.30:8080 with delay 3
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 13.06 s per job over 1 runs.
+Total invocation time across jobs 16.17 s, per job 8.085 s per round on average.
+Average successes 100.0 % out of 2 jobs.
+Grand total across all rounds 16.17 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-2-4-True.csv
+Invocation time measurement. Parallelism: 4
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Invocation time average 13.08 s per job over 1 runs.
+Total invocation time across jobs 16.62 s, per job 4.155 s per round on average.
+Average successes 100.0 % out of 4 jobs.
+Grand total across all rounds 16.62 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-4-4-True.csv
+Invocation time measurement. Parallelism: 6
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 17.84 s per job over 1 runs.
+Total invocation time across jobs 20.65 s, per job 3.4416666666666664 s per round on average.
+Average successes 100.0 % out of 6 jobs.
+Grand total across all rounds 20.65 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-6-4-True.csv
+Invocation time measurement. Parallelism: 8
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 16.35 s per job over 1 runs.
+Total invocation time across jobs 19.77 s, per job 2.47125 s per round on average.
+Average successes 100.0 % out of 8 jobs.
+Grand total across all rounds 19.77 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-8-4-True.csv
+Invocation time measurement. Parallelism: 10
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 19.42 s per job over 1 runs.
+Total invocation time across jobs 24.57 s, per job 2.457 s per round on average.
+Average successes 100.0 % out of 10 jobs.
+Grand total across all rounds 24.57 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-10-4-True.csv
+Invocation time measurement. Parallelism: 12
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+Invocation time average 22.6 s per job over 1 runs.
+Total invocation time across jobs 28.15 s, per job 2.345833333333333 s per round on average.
+Average successes 100.0 % out of 12 jobs.
+Grand total across all rounds 28.15 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-12-4-True.csv
+Invocation time measurement. Parallelism: 14
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 0
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→→ INFERRED OK
+ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 29.19 s per job over 1 runs.
+Total invocation time across jobs 35.98 s, per job 2.57 s per round on average.
+Average successes 100.0 % out of 14 jobs.
+Grand total across all rounds 35.98 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-14-4-True.csv
+Invocation time measurement. Parallelism: 16
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+Invocation time average 26.69 s per job over 1 runs.
+Total invocation time across jobs 33.64 s, per job 2.1025 s per round on average.
+Average successes 100.0 % out of 16 jobs.
+Grand total across all rounds 33.64 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-16-4-True.csv
+Invocation time measurement. Parallelism: 18
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+* start request http://160.85.252.22:8080 with delay 3
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 30.25 s per job over 1 runs.
+Total invocation time across jobs 36.56 s, per job 2.031111111111111 s per round on average.
+Average successes 100.0 % out of 18 jobs.
+Grand total across all rounds 36.56 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-18-4-True.csv
+Invocation time measurement. Parallelism: 20
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Minimiser loaded for ['edge', 'fog', 'cloud1', 'cloud2']
+Round 0 @ new node None total nodes 4
+Subround 0
+* start request http://160.85.252.232:8080 with delay 3
+* start request http://160.85.252.232:8080 with delay 4
+* start request http://160.85.252.232:8080 with delay 1
+* start request http://160.85.252.232:8080 with delay 3
+* start request http://160.85.252.232:8080 with delay 4
+* start request http://160.85.252.232:8080 with delay 4
+* start request http://160.85.252.232:8080 with delay 3
+* start request http://160.85.252.232:8080 with delay 1
+* start request http://160.85.252.232:8080 with delay 1
+* start request http://160.85.252.232:8080 with delay 1
+* start request http://160.85.252.232:8080 with delay 4
+* start request http://160.85.252.232:8080 with delay 3
+* start request http://160.85.252.232:8080 with delay 2
+* start request http://160.85.252.232:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 4
+* start request http://160.85.252.22:8080 with delay 3
+* start request http://160.85.252.22:8080 with delay 0
+* start request http://160.85.252.22:8080 with delay 1
+* start request http://160.85.252.22:8080 with delay 2
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→→ INFERRED OK
+ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+→ INFERRED OK
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+* one request finished True
+Invocation time average 24.14 s per job over 1 runs.
+Total invocation time across jobs 34.07 s, per job 1.7035 s per round on average.
+Average successes 100.0 % out of 20 jobs.
+Grand total across all rounds 34.07 s.
+Aggregate results written to testclient.csv
+Raw results written to testclient-20-4-True.csv
+Overall experiment time 266.24 s.
+[topology] localhost:8080 → None localhost 8080
+[topology] spio@192.168.0.30:8080 → spio 192.168.0.30 8080
+[topology] ubuntu@160.85.252.232:8080 → ubuntu 160.85.252.232 8080
+[topology] ubuntu@160.85.252.22:8080 → ubuntu 160.85.252.22 8080
+Terminating 4 nodes...
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+No exception - likely terminated regularly.
+./testnodes.sh: line 46: kill: (1951) - No such process
+./testnodes.sh: line 46: kill: (1965) - No such process
+./testnodes.sh: line 46: kill: (1976) - No such process
+./testnodes.sh: line 46: kill: (1994) - No such process
+sleep 3
+=== End of experiment ===
+=> Experiment results: experiments/exp1401

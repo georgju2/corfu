@@ -1,0 +1,28 @@
+/* Meta Node*/
+{
+  "$id": "https://example.com/meta-node.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meta Node",
+  "description": "Meta Information for all nodes.",
+  "required": [ "nodeName" ],
+  "type": "object",
+  "properties": {
+    "availableNodes": {
+      "description": "Nodes Available",
+      "type": "array",
+      "nodes": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "busyNodes": {
+      "description": "Nodes Being Used",
+      "type": "array",
+      "nodes": {
+        "type": "integer"
+      },
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Training...
+Fitting...
+Inference...
+- Requested node distribution [11, 6, 17, 8] for ['edge', 'fog', 'cloud1', 'cloud2']
+- Predicted execution time 19.50872
+
+real    0m0.414s
+user    0m0.377s
+sys     0m0.036s

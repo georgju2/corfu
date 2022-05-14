@@ -1,0 +1,67 @@
+This is the code + experiments/reproducibility repository for the paper:
+ «Self-balancing Architectures based on Liquid Functions across Computing Continuums»
+presented at the DML-ICC workshop at the 14th IEEE/ACM UCC 2021.
+
+It is in *very* rough form, though.
+
+---
+
+A very simple example with just static function serving:
+
+$ python3 corfu.py 8080 functions
+$ curl http://localhost:8080/hello/helloworld
+
+To add optimisation and dynamic assignment features, add the functions-pinned
+directory as additional argument, and place a topology file into the main folder
+(see experiment/*.topology for examples).
+
+Finally, the functions-mutable directory contains management functions that are
+useful for experiments although cause CoRFu to be no longer immutable. They encompass
+functions for dynamic function serialisation and deployment, as well as service
+termination.
+
+$ python3 corfu.py 8080 functions-mutable
+# open second terminal
+$ cd annotation
+$ python3 testoffloading.py
+$ curl http://localhost:8080/dyn_testfunc/testfunc/11
+$ curl http://localhost:8080/terminate/terminate
+
+The annotation folder also contains the script code2gcf.py to create leaf nodes,
+aka cloud functions running in external FaaS.
+
+---
+
+How to prepare more complex experiment functions:
+
+- copy imageclass-prep folder to node(s) and run build.sh in it (requires Internet access)
+  * idempotent script - running again should do nothing in case of success
+- copy linreg to node(s) and run linreg/prepare.sh
+- copy all code from functions and functions-pinned into the corfu main folder
+
+(The imagetune function is not containerised and thus does not need preparation.
+The imageclass function is shared with the demonstration system presented at IOT 2021
+called «Smart Waste Disposal with Edge-Cloud Continuum Architecture».)
+
+How to run experiments:
+
+- prepare functions, as described above
+- copy all files from experiments folder into the corfu main folder as well
+- create new *.topology file
+- run topology.py to install all dependencies etc. (requires Internet access)
+  * that will start corfu as well - instance needs to be terminated manually
+- run experiments (forms of testnodes.sh depending on topology - see sampletest.sh for an idea)
+
+---
+
+CoRFu only works at a network/service level and is thus detached from the infrastructure.
+The experiment folder contains topology definitions to set up physical or virtual (containerised)
+nodes.
+
+Resource limits are possible, but lead to unpredictable container names and therefore require
+adjustments to the topology definitions for each stack instantiation:
+
+docker swarm init
+docker stack deploy --compose-file docker-compose.yaml corfustack
+(verify with: docker stats)
+docker stack rm corfustack

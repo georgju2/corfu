@@ -1,0 +1,15 @@
+version: "3.5"
+services:
+  ubuntuedge:
+    image: python:3-slim
+    ports:
+      - 8081:8080
+    command: sleep 99999
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 1024M
+        reservations:
+          cpus: '0.25'
+          memory: 256M

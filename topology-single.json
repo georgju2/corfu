@@ -1,0 +1,54 @@
+// Data generation - sensor nodes
+// Placement
+// Unreachable nodes
+// Security - protected nodes
+// inter communication
+// hostname ipadrress username owner constraints
+
+/* A single Node with keys to refer to other parts of the same file*/
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/topology-single-node.schema.json",
+  "title": "Topology Schema for a Single Node",
+  "description": "Topology Schema for a Single Node",
+  "type": "object",
+  "properties": {
+    "nodeId": {
+      "description": "The unique identifier for a node",
+      "type": "integer"
+    },
+    "nodeName": {
+      "description": "Name of the node",
+      "type": "string"
+    },
+    "hostName": {
+      "description": "The hostName of the node",
+      "type": "string",
+      "exclusiveMinimum": 0
+    },
+    "deploymentAttributes": {
+      "description": "Attributes of the node",
+      "type": "object",
+      "properties": {
+        "memory": {
+          "type": "number"
+        },
+        "cpu": {
+          "type": "number"
+        },
+        "placement": { /*optional parameter*/
+          "type": "string"
+        }
+      },
+      "required": [ "memory", "cpu" ]
+    },
+    "nodeLocation": {
+      "description": "Placement of the node during deployment.",
+      "$ref": "https://example.com/placement.schema.json"
+    },
+    "history": {
+      "description": "History of the node placement during deployment.",
+      "$ref": "https://example.com/history.schema.json"
+    }
+  }
+}
