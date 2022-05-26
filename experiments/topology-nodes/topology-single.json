@@ -1,0 +1,76 @@
+{
+  "title": "Topology Schema for a Single Node",
+  "description": "Topology Schema for a Single Node",
+  "type": "object",
+  "properties": {
+    "nodeId": {
+      "description": "The unique identifier for a node",
+      "type": "string"
+    },
+    "nodeType": {
+      "description": "Type of the node",
+      "type": "string"
+    },
+    "hostName": {
+      "description": "The host name of the node",
+      "type": "string"
+    },
+    "ipAddress": {
+      "description": "The ip address of the node",
+      "type": "string"
+    },
+    "owner": {
+      "description": "The owner of the node, can be contacted in case of issues with the node",
+      "type": "string"
+    },
+    "nodeHistory": {
+      "description": "History of the node placement during deployment.",
+      "type": "array",
+      "nodes": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "nodeDeploymentAttributes": {
+      "description": "Attributes of the node",
+      "type": "object",
+      "properties": {
+        "memory": {
+          "type": "number"
+        },
+        "cpu": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "memory",
+        "cpu"
+      ]
+    },
+    "nodeLocation": {
+      "description": "Placement of the node during deployment (deploymentID)",
+      "type": "string"
+    },
+    "nodeConstraints": {
+      "description": "Constraints placed on the node (\"$ref\": \"Common.json#/definitions/ExternalType\")",
+      "$ref": "./topology-constraints.json"
+    },
+    "nodeCredentials": {
+      "description": "Credentials of the node",
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "The username of the entity with node access"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "username",
+        "password"
+      ]
+    }
+  }
+}

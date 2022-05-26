@@ -1,0 +1,27 @@
+{
+  "title": "Meta Node",
+  "description": "Meta Information for all nodes for deployment",
+  "required": [
+    "availableNodes",
+    "busyNodes"
+  ],
+  "type": "object",
+  "properties": {
+    "availableNodes": {
+      "description": "Nodes Available for deployment",
+      "type": "array",
+      "nodes": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "busyNodes": {
+      "description": "Nodes Being Used for a deployment",
+      "type": "array",
+      "nodes": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  }
+}

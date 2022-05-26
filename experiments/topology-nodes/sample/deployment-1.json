@@ -1,0 +1,16 @@
+{
+	"deploymentId":"d-1",
+	"deploymentType":"iot",
+	"nodesUsedForCorfuInstance":[
+		"node-1",
+		"node-2"
+	],
+	"nodesAvailableForCorfuInstance":[
+		"node-3",
+		"node-4"
+	],
+	"nodesUnreachableOrUnsuitableForDeployment":[
+		"node-5",
+		"node-6"
+	]
+}

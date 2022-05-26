@@ -1,0 +1,27 @@
+{
+  "title": "Constraints",
+  "description": "This node presents a list of constraints that can be optionally placed on a node during deployment",
+  "type": "object",
+  "properties": {
+    "available_time_of_day": {
+      "description": "Time during which node is available to be used by deployments. Parses the time in 24 hours format",
+      "_comment": "Eg: to indicate that node can be used for deployment between 8:00 a.m & 6:00 pm use format: 8-18",
+      "type": "string"
+    },
+    "memory_limit": {
+      "description": "Memory limit that should not be exceeded by the deployment",
+      "type": "number"
+    },
+    "cpu_limit": {
+      "description": "CPU Limit that should not be exceeded by the deployment",
+      "type": "number"
+    },
+    "deployment_exclusions": {
+      "description": "List of deployment type's that are not allowed to use the node for deployment",
+      "type": "array",
+      "deploymentType": {
+        "type": "string"
+      }
+    }
+  }
+}

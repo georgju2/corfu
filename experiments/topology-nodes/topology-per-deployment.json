@@ -1,0 +1,39 @@
+{
+  "title": "Topology Per Deployment",
+  "description": "Dynamically generated Topology Per Deployment indicating relationship between nodes",
+  "required": [
+    "deploymentId"
+  ],
+  "type": "object",
+  "properties": {
+    "deploymentId": {
+      "description": "ID of the deployment",
+      "type": "string"
+    },
+    "deploymentType": {
+      "description": "Type of the deployment",
+      "type": "string"
+    },
+    "nodesUsedForCorfuInstance": {
+      "description": "Nodes that are currently busy and used in deployment",
+      "type": "array",
+      "nodes": {
+        "type": "string"
+      }
+    },
+    "nodesAvailableForCorfuInstance": {
+      "description": "Nodes that are currently available to be used in deployment",
+      "type": "array",
+      "nodes": {
+        "type": "string"
+      }
+    },
+    "nodesUnreachableOrUnsuitableForDeployment": {
+      "description": "Nodes that are currently unreachable or unsuitable for use in deployment",
+      "type": "array",
+      "nodes": {
+        "type": "string"
+      }
+    }
+  }
+}

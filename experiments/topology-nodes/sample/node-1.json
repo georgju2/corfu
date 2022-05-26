@@ -1,0 +1,31 @@
+{
+	"nodeId":"node-1",
+	"nodeType":"container",
+	"hostName":"localhost",
+	"ipAddress":"132.145.167",
+	"username":"root",
+	"owner":"jay",
+	"nodeHistory":[
+		"d-1",
+		"d-2"
+	],
+	"nodeDeploymentAttributes":{
+		"memory":15.0,
+		"cpu":5.0,
+		"placement":"d-1"
+	},
+	"nodeLocation":"d-1",
+	"nodeConstraints":{
+		"available_time_of_day":"5-17",
+		"memory_limit":15.0,
+		"cpu_limit":3.0,
+		"deployment_exclusions":[
+			"d-3",
+			"d-4"
+		]
+	},
+	"nodeCredentials":{
+		"username":"root",
+		"password":"root"
+	}
+}
