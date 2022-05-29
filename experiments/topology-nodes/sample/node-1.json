@@ -1,7 +1,8 @@
 {
 	"nodeId":"node-1",
-	"nodeType":"container",
-	"hostName":"localhost",
+	"nodeType":"single",
+	"flavor":"container",
+	"hostName":"ubuntuedge",
 	"ipAddress":"132.145.167",
 	"username":"root",
 	"owner":"jay",

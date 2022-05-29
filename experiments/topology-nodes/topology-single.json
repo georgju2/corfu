@@ -8,7 +8,11 @@
       "type": "string"
     },
     "nodeType": {
-      "description": "Type of the node",
+      "description": "Type of node",
+      "type": "string"
+    },
+    "flavor": {
+      "description": "Flavor of node",
       "type": "string"
     },
     "hostName": {

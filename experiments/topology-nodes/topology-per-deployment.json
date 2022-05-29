@@ -6,6 +6,10 @@
   ],
   "type": "object",
   "properties": {
+    "nodeType": {
+      "description": "Type of node",
+      "type": "string"
+    },
     "deploymentId": {
       "description": "ID of the deployment",
       "type": "string"

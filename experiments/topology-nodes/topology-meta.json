@@ -7,6 +7,10 @@
   ],
   "type": "object",
   "properties": {
+    "nodeType": {
+      "description": "Type of node",
+      "type": "string"
+    },
     "availableNodes": {
       "description": "Nodes Available for deployment",
       "type": "array",

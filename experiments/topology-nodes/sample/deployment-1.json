@@ -1,4 +1,5 @@
 {
+	"nodeType":"deployment",
 	"deploymentId":"d-1",
 	"deploymentType":"iot",
 	"nodesUsedForCorfuInstance":[

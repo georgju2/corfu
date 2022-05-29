@@ -1,4 +1,5 @@
 {
+	"nodeType":"constraint",
 	"available_time_of_day":"5-17",
 	"memory_limit":14.0,
 	"cpu_limit":3.0,
