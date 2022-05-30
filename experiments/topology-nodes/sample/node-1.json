@@ -2,7 +2,7 @@
 	"nodeId":"node-1",
 	"nodeType":"single",
 	"flavor":"container",
-	"hostName":"ubuntuedge",
+	"hostName":"ubuntuedge_1234",
 	"ipAddress":"132.145.167",
 	"username":"root",
 	"owner":"jay",

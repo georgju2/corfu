@@ -12,10 +12,6 @@ except:
 
 Conf = collections.namedtuple("Conf", "user host port flavour")
 
-
-#container root@experiments_ubuntuedge_1:8081
-#--> connect to a container with this name
-
 def topology(topo):
     confs = []
     f = open(topo)
@@ -108,9 +104,10 @@ def deploy(confs, ffile=None):
     termpass = "-S" # FIXME: for VT220 (apu) but not for real terminals; query via $TERM
     for conf in confs:
         if conf.flavour == "container":
-            os.system(f"docker exec -ti {conf.host} apt-get update")
-            os.system(f"docker exec -ti {conf.host} apt-get -y install python3-flask")
-            os.system(f"docker exec -ti {conf.host} mkdir -p /tmp/corfu-exp")
+            # removed -ti flag : https://stackoverflow.com/questions/43099116/error-the-input-device-is-not-a-tty
+            os.system(f"docker exec  {conf.host} apt-get update")
+            os.system(f"docker exec  {conf.host} apt-get -y install python3-flask")
+            os.system(f"docker exec  {conf.host} mkdir -p /tmp/corfu-exp")
             for locfile in floc:
                 os.system(f"docker cp {floc[locfile]}/{locfile} {conf.host}:/tmp/corfu-exp")
         else:
@@ -155,10 +152,9 @@ def launchterms(confs, topofile=None):
         termappbase = "konsole --hold"
     elif os.path.isfile("/usr/bin/lxterminal"):
         termappbase = "lxterminal"
-    elif os.path.isfile("/usr/bin/tmux"):
+        # changed to /usr/local/bin from /usr/bin
+    elif os.path.isfile("/usr/local/bin/tmux"):
         termappbase = "tmux"
-        # Open native Mac terminal here -> open another command line on MAC terminal -> name of the terminal
-        # so u can see the running corfu
     else:
         exit("No suitable terminal found! Not starting interactively.")
 
@@ -202,7 +198,7 @@ def launchterms(confs, topofile=None):
                 os.system(f"{sshcmd} cd /tmp/corfu-exp && mkdir -p {expfolder}")
                 scommand = f"{sshcmd} \"cd /tmp/corfu-exp && uname -a && python3 -u corfu.py {conf.port} functions functions-mutable functions-pinned 2>&1\" | tee {expfolder}/{conf.host}_{conf.port}.log"
                 if termappbase == "tmux":
-                    sysexec(f"tmux new-window -n corfu-window-{idx + 2} -t corfu-session-1: '{scommand}'")
+                    sysexec(f"/usr/local/bin/tmux new-window -n corfu-window-{idx + 2} -t corfu-session-1: '{scommand}'")
                 else:
                     pid = sysexec(f"{termapp} -e '{scommand}'")
             else:
@@ -212,7 +208,7 @@ def launchterms(confs, topofile=None):
                 os.makedirs(expfolder, exist_ok=True)
                 scommand = f"sh -c \"{corfu} {conf.port} functions functions-mutable functions-pinned 2>&1 | tee {expfolder}/{conf.host}_{conf.port}.log\""
                 if termappbase == "tmux":
-                    tmuxcmd = f"tmux new-window -n corfu-window-{idx + 2} -t corfu-session-1: '{scommand}'"
+                    tmuxcmd = f"/usr/local/bin/tmux new-window -n corfu-window-{idx + 2} -t corfu-session-1: '{scommand}'"
                     print("TMUX>>", tmuxcmd)
                     sysexec(tmuxcmd)
                 else:
@@ -223,8 +219,8 @@ def launchterms(confs, topofile=None):
             pids.append(pid)
 
     if termappbase == "tmux":
-        sysexec("tmux select-window -t corfu-window-1")
-        os.system("tmux attach")
+        sysexec("/usr/local/bin/tmux select-window -t corfu-window-1")
+        os.system("/usr/local/bin/tmux attach-session")
 
     return expfolder, pids
 
@@ -244,6 +240,7 @@ if __name__ == "__main__":
     topofile = sys.argv[1]
 
     confs = topology(topofile)
+    # [Conf(user='root', host='experiments_ubuntuedge_1', port='8081', flavour='container')]
     dret = deploy(confs)
     if dret:
         folder, pids = launchterms(confs, topofile)

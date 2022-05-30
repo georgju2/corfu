@@ -1,0 +1,6 @@
+version: "3.5"
+services:
+  ubuntuedge:
+    image: python:3-slim
+    container_name: topo_test_1234
+    command: sleep 99999

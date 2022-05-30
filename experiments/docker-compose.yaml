@@ -3,7 +3,7 @@ services:
   ubuntuedge:
     image: python:3-slim
     ports:
-      - 8081:8080
+      - 8084:8083
     command: sleep 99999
     deploy:
       resources:

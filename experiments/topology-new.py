@@ -89,9 +89,10 @@ def deploy(confs, ffile=None):
             if conf.get('flavor') == "container":
                 host = conf.get('hostName')
                 user = conf.get('nodeCredentials').get('username')
-                os.system(f"docker exec -ti {host} apt-get update")
-                os.system(f"docker exec -ti {host} apt-get -y install python3-flask")
-                os.system(f"docker exec -ti {host} mkdir -p /tmp/corfu-exp")
+                # removed -ti flag : https://stackoverflow.com/questions/43099116/error-the-input-device-is-not-a-tty
+                os.system(f"docker exec {host} apt-get update")
+                os.system(f"docker exec {host} apt-get -y install python3-flask")
+                os.system(f"docker exec {host} mkdir -p /tmp/corfu-exp")
                 for locfile in floc:
                     os.system(f"docker cp {floc[locfile]}/{locfile} {host}:/tmp/corfu-exp")
             else:
@@ -122,8 +123,118 @@ def deploy(confs, ffile=None):
     return dret
 
 
-if __name__ == '__main__':
+def sysexec(bgcmd):
+    p = subprocess.Popen(bgcmd, shell=True)
+    return p.pid
 
+
+def launchterms(confs, topofile=None):
+    gmoddir = "/usr/lib/python3/dist-packages/"
+
+    if __file__.startswith("/usr"):
+        corfu = "corfu"
+    else:
+        corfu = "python3 -u ./corfu.py"
+
+    if os.path.isfile("/usr/bin/konsole"):
+        termappbase = "konsole --hold"
+    elif os.path.isfile("/usr/bin/lxterminal"):
+        termappbase = "lxterminal"
+        # changed to /usr/local/bin from /usr/bin
+    elif os.path.isfile("/usr/local/bin/tmux"):
+        termappbase = "tmux"
+    else:
+        exit("No suitable terminal found! Not starting interactively.")
+
+    if os.getenv("CORFUTERM"):
+        termappbase = os.getenv("CORFUTERM")
+
+    if not os.getenv("DISPLAY"):
+        os.putenv("DISPLAY", ":0")
+
+    print("TMUX?", termappbase)
+
+    if termappbase == "tmux" and topofile:
+        tmuxcmd = f"/usr/local/bin/tmux new -d -s corfu-session-1 -n corfu-window-1"
+        # f"/usr/local/bin/tmux new -d -s corfu-session-1 -n corfu-window-1 'python3 {gmoddir}/muxdoc.py {topofile}'"
+        # !/bin/bash tmux new-session -d -s dropx 'python /home/pi/drop/dropx.py'
+        print("TMUX>>", tmuxcmd)
+        sysexec(tmuxcmd)
+        time.sleep(0.5)
+
+    rnd = random.randrange(10000)
+    expfolder = f"experiments/exp{rnd}"
+    pids = []
+
+    for idx, key in enumerate(confs):
+        conf = confs[key]
+
+        if conf.get('nodeType') == 'single':
+            pid = None
+            host = conf.get('hostName')
+            user = conf.get('nodeCredentials').get('username')
+            port = conf.get('ipAddress')
+            termapp = termappbase
+            if termappbase == "konsole --hold":
+                termapp = f"{termappbase} -p tabtitle='CoRFu {host}'"
+
+            if conf.get('flavor') == "container":
+                dockcmd = f"docker exec -w /tmp/corfu-exp {host}"
+                os.system(f"{dockcmd} mkdir -p {expfolder}")
+                if termappbase == "tmux":
+                    tmuxcmd1 = f"/usr/local/bin/tmux new-window -n corfu-window-{idx + 2} -t corfu-session-1: '{dockcmd} python3.9 corfu.py'"
+                    sysexec(tmuxcmd1)
+                    print("TMUX>>", tmuxcmd1)
+                else:
+                    termcmd = f"{termapp} -e '{dockcmd} python3.9 corfu.py'"  # FIXME 3.9 for older python:3-slim image
+                    # FIXME support for ull command including tee/uname, presumably requires wrapper script, in docker mode
+                    pid = sysexec(termcmd)
+            else:
+                if host != "localhost":
+                    sshcmd = f"ssh -i topology-keys/{host}_auto {user}@{host}"
+                    os.system(f"{sshcmd} cd /tmp/corfu-exp && mkdir -p {expfolder}")
+                    scommand = f"{sshcmd} \"cd /tmp/corfu-exp && uname -a && python3 -u corfu.py {port} functions functions-mutable functions-pinned 2>&1\" | tee {expfolder}/{host}_{port}.log"
+                    if termappbase == "tmux":
+                        sysexec(
+                            f"/usr/local/bin/tmux new-window -n corfu-window-{idx + 2} -t corfu-session-1: '{scommand}'")
+                    else:
+                        pid = sysexec(f"{termapp} -e '{scommand}'")
+                else:
+                    if not __file__.startswith("/usr"):
+                        origdir = os.getcwd()
+                        os.chdir("..")
+                    os.makedirs(expfolder, exist_ok=True)
+                    scommand = f"sh -c \"{corfu} {port} functions functions-mutable functions-pinned 2>&1 | tee {expfolder}/{host}_{port}.log\""
+                    if termappbase == "tmux":
+                        tmuxcmd = f"/usr/local/bin/tmux new-window -n corfu-window-{idx + 2} -t corfu-session-1: '{scommand}'"
+                        print("TMUX>>", tmuxcmd)
+                        sysexec(tmuxcmd)
+                    else:
+                        pid = sysexec(f"{termapp} -e '{scommand}'")
+                    if not __file__.startswith("/usr"):
+                        os.chdir(origdir)
+            if pid:
+                pids.append(pid)
+
+    if termappbase == "tmux":
+        sysexec("/usr/local/bin/tmux select-window -t corfu-window-1")
+        os.system("/usr/local/bin/tmux attach-session")
+
+    return expfolder, pids
+
+
+def storeinformation(folder, pids):
+    expdir = "_experiments"
+    f = open(f"{expdir}/_expfolder", "w")
+    print(folder, file=f)
+    f.close()
+    f = open(f"{expdir}/_exppids", "w")
+    for pid in pids:
+        print(pid, file=f)
+    f.close()
+
+
+if __name__ == '__main__':
     if len(sys.argv) != 2:
         exit("Syntax: topology.py directory_name_where_json_files_exist")
     files_dir = sys.argv[1]
@@ -134,5 +245,5 @@ if __name__ == '__main__':
     dret = deploy(topology_configs)
     if dret:
         print("Deploy: ", topology_configs)
-        # folder, pids = launchterms(confs, topofile)
-        # storeinformation(folder, pids)
+        folder, pids = launchterms(topology_configs, files_dir + "/node-1.json")
+        storeinformation(folder, pids)
